@@ -1,4 +1,4 @@
-######Graphics for program######
+#####Graphics for program######
 
 ######## ----------------------------------WELCOME GRAPHIC --------------------------------------------- ########
 
@@ -42,7 +42,7 @@ def ascii_Afterlife():
 
 ####### ------------------------------------ WELCOME SIGN ----------------------------- #######
 def ascii_welcome():
-        print(colored('''
+        print('''
  __    __     _                            _____        _____ _          
 / / /\ \ \___| | ___ ___  _ __ ___   ___  /__   \___   /__   \ |__   ___ 
 \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \   / /\/ _ \    / /\/ '_ \ / _ \
@@ -54,7 +54,8 @@ def ascii_welcome():
  //_ \| |_| __/ _ \ '__| | | |_ / _ \                                    
 /  _  \  _| ||  __/ |  | | |  _|  __/                                    
 \_/ \_/_|  \__\___|_|  |_|_|_|  \___| 
-''' , 'red' , 'blue' , 'purple' , attrs=['reverse' , 'blink' , 'bold']))
+
+        ''')
 
 ####### ------------------------------------- HELL GRAPHIC --------------------------------- #######
 def ascii_devil():
@@ -180,7 +181,6 @@ def ascii_icarus():
   .                                       @=..@.   ...                                              
                                           +=.@..                                                    
                                           .@+.                                                      
-
           ''')
 
 ####### -------------------------- HEAVEN SIGN ------------------------------------------- ######
@@ -323,14 +323,12 @@ def ascii_monitoring_recon_graphic():
 ..................................+@@@@.  %@@@@@@@=%@@@@@-.#@@@@@@#.................................
 .....................................=@@@@@@@@@@=.#@@@#..+@@@@@%+...................................
 ..........................................:---+#####%%@@@@%#=:......................................
-
 ''' , 'dark green'))
 
 
 
 def ascii_monitoring_recon_sign():
     print('''
-
   \  |               _)  |                _)              
  |\/ |   _ \   __ \   |  __|   _ \    __|  |  __ \    _` |
  |   |  (   |  |   |  |  |    (   |  |     |  |   |  (   |
@@ -400,7 +398,6 @@ def ascii_probing_graphic():
                          ..... .=...   ....::*..++....                                               
                                 .*..-:*+*-.:-##....                                                  
                                 .:*=-+*#*=.........                                                  
-
 ''' , 'dark red'))
 
 def ascii_probing_sign():
@@ -472,14 +469,72 @@ def exit():
 ####### ------------------------- Main Menu DEF ----------------------- ########
 def menu():
     clear_screen()
-    ascii_welcome()
+
+    main_menu()
+    
+ ####### --------------------------- ANON SURF --------------------------------- ########
+def Anonsurf():
+    print(colored('Welcome to Anon Surf, please install before running' , 'red'))
+    print("Anon surf puts your internet traffic through Tor to allow for more protective web browsing")
+    print("1) Install")
+    print("2) Run")
+    print("3) Stop")
+    print("4) Status") 
+    print("5) Exit Anon Surf / Return To Afterlife")
+    option = input("> ")
+
+    if option == "1":
+        clear_screen()
+        os.system("sudo git clone https://github.com/Und3rfl0w/kali-anonsurf.git")
+        os.system("cd kali-anonsurf && sudo ./installer.sh && cd -- && sudo rm-r kali-anonsurf")
+        Anonsurf()
+    elif option == "2":
+        clear_screen()
+        os.system("sudo anonsurf start")
+        Anonsurf()
+    elif option == "3":
+        clear_screen()
+        os.system("sudo anonsurf stop")
+        Anonsurf()
+    elif option == "4":
+        clear_screen()
+        os.system("sudo anonsurf status")
+        Anonsurf()
+    elif option == "5":
+        clear_screen()
+        print(colored('Come back when you ready to surf anonymously!' , 'red'))
+        main_menu()
+ 
+ 
+####### ------------------- HEAVEN BRANCH ------------------------------------- #######
+def Heaven():
+    ascii_icarus()
+    ascii_heaven_sign()
+
+    print("1) Anonsurf")
+    print("2) Deep Sound")
+    option = input("> ")
+
+    if option == "1":
+        clear_screen()
+        Anonsurf()
+    elif option == "2":
+        clear_screen()
+        Deep_Sound()
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Heaven()     
 
 ######## ------------------------------------ MAIN MENU ------------------------------------------------------------ ############
 def main_menu():
     clear_screen()
-    menu()
-    print(colored("Which Path Do you Choose?" , 'red', attrs=['reverse' , 'blink' , 'bold']))
-    print(colored( 'Please pick a number between 1-3' , 'red'))
+    ascii_Afterlife()
+    ascii_welcome()
+    
+    print(colored('Which Path Do you Choose?' , 'red' , attrs=['reverse' , 'blink' , 'bold']))
+    print(colored('Please pick a number between 1-3' , 'red'))
     print("1) Heaven")
     print("2) Hell")
     print("3) Purgatory")
@@ -487,14 +542,12 @@ def main_menu():
     option = input("> ")
     if option == "1":
         clear_screen()
-        ascii_icarus()
-        ascii_heaven_sign()
         Heaven()
+        
     elif option == "2":
-        clear_screen()
-        ascii_devil()
-        ascii_hell_sign()       
+        clear_screen()      
         Hell()
+        
     elif option =="3":
         clear_screen()
         ascii_purgatory()
@@ -508,58 +561,10 @@ def main_menu():
         time.sleep(1)
         clear_screen()
         main_menu() 
-    
+
 if __name__ == "__main__":
     main_menu()
 
-
-####### ------------------- HEAVEN BRANCH ------------------------------------- #######
-def Heaven():
-
-    print("1) Anonsurf")
-    print("2) Deep Sound")
-    option = input("> ")
-
-    if option == (1):
-        clear_screen()
-        Anonsurf()
-    elif option == (2):
-        clear_screen()
-        Deep_Sound()
-    else:
-        print("\033[91m Do not stray from the path, try again\033[0m")
-        time.sleep(1)
-        clear_screen()
-        ascii_icarus()
-        Heaven() 
- ####### --------------------------- ANON SURF --------------------------------- ########
-def Anonsurf():
-    print(colored('Welcome to Anon Surf, please install before running' , 'red'))
-    print("Anon surf puts your internet traffic through Tor to allow for more protective web browsing")
-    print("1) Install")
-    print("2) Run")
-    print("3) Stop")
-    print("4) Status") 
-    print("5) Exit Anon Surf / Return To Afterlife")
-    option = input("> ")
-
-    if option == (1):
-        clear_screen()
-        os.system("sudo git clone https://github.com/Und3rfl0w/kali-anonsurf.git")
-        os.system("cd kali-anonsurf && sudo ./installer.sh && cd -- && sudo rm-r kali-anonsurf")
-    elif option == (2):
-        clear_screen()
-        os.system("sudo anonsurf start")
-    elif option == (3):
-        clear_screen()
-        os.system("sudo anonsurf stop")
-    elif option == (4):
-        clear_screen()
-        os.system("sudo anonsurf status")
-    elif option == (5):
-        clear_screen()
-        print(colored('Come back when you ready to surf anonymously!' , 'red'))
-        main_menu()
 
 ######## -------------------------- DEEP SOUND --------------------------------------- ########
 def Deep_Sound():
@@ -588,6 +593,9 @@ def Deep_Sound():
 
 ######## ------------------------------------ HELL BRANCH ----------------------------------------------------------########
 def Hell():
+    ascii_devil()
+    ascii_hell_sign()
+    
     print(colored('Welcome To Hell, Pick Your Posion' , 'red' , attrs=[ 'blink' , 'bold']))
     print("1) Monitoring and Recon")
     print("2) Probing and Testing")
@@ -599,7 +607,7 @@ def Hell():
         ascii_monitoring_recon_graphic()
         ascii_monitoring_recon_sign()
         Monitoring_and_Recon()
-        
+
     elif option == (2):
         clear_screen()
         ascii_probing_graphic()
@@ -610,9 +618,9 @@ def Hell():
         clear_screen()
 
 ######### -----------------------------------------------Monitoring and Recon List ---------------------------------------######
-    if option == (1):
+def Monitoring_and_Recon():
 
-        print(colored('Welcome to Monitoring and Recon, all of your pre-hacking needs' , 'red' attrs= [ 'bold' ]))
+        print(colored('Welcome to Monitoring and Recon, all of your pre-hacking needs' , 'red' , attrs= [ 'bold' ]))
         print("1) Canary Tokens")
         print("2) Follow That Page")
         print("3) DNS Dumpster")
@@ -625,36 +633,40 @@ def Hell():
         print("10) Cyber Defence Search Engine")
         print("11) Email Tracer")
         option = ('> ')
-    
+
 ####### ------------------------------------ Probing and Testing -----------------------------------------------------############
-    elif option ==(2):
-    
-    Probing(): 
-    
-    print(colored('Probing and Testing' , 'red' , attrs= [ 'bold' ]))
-    print("1) Spy Extension")
-    print("2) Sudo Piggy Back")
-    print("3) Wifite(2)")
-    print("4) PSudo Hash")
-    print("5) Attack Surface Maps")
-    print("6) USB Rubber Ducky Payloads")
-    print("7) Villian")
-    print("8) Voicemail Automator")
-    print("9) GTFO BINS")
-    option = ('> ')
-    
-    print("")
+def Probing():
+
+        print(colored('Probing and Testing' , 'red' , attrs= [ 'bold' ]))
+        print("1) Spy Extension")
+        print("2) Sudo Piggy Back")
+        print("3) Wifite(2)")
+        print("4) PSudo Hash")
+        print("5) Attack Surface Maps")
+        print("6) USB Rubber Ducky Payloads")
+        print("7) Villian")
+        print("8) Voicemail Automator")
+        print("9) GTFO BINS")
+        option = ('> ')
+
+        
 
 ####### ---------------------------------------- PURGATORY ---------------------------------------------------------########
 def Purgatory():
     ascii_purgatory()
     ascii_purgatory_sign()
-    
+
     print(colored('Welcome To Purgatory, Where Do You Wander?' , 'red'))
     print("1) Dark Websites")
     print("2) Clear Websites")
     print("3) Reading Material")
-    print("4) Forums
-    print("5) 
-
-
+    print("4) Forums")
+    
+    
+    
+    
+    
+    
+    
+    
+    
