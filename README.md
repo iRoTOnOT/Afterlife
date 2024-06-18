@@ -9,5 +9,5 @@ This program is still being written so please be patient. If you wish to see any
 The README will be a quick reference to what each section does and contains. The code will be written out in segregated for easy evaluation of the code and what programs are installed for personal additions or for personal alterations if need be. 
 
 1. Heaven - Defenses programs to assist with hiding and protecting yourself
-2. Hell - Defensive for pen-testing and probing practices
+2. Hell - Offense for pen-testing and probing practices
 3. Purgatory - Resources of reading material and sites to assist with research and exploration
