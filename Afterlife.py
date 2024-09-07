@@ -43,19 +43,20 @@ def ascii_Afterlife():
 ####### ------------------------------------ WELCOME SIGN ----------------------------- #######
 def ascii_welcome():
         print('''
- __    __     _                            _____        _____ _          
-/ / /\ \ \___| | ___ ___  _ __ ___   ___  /__   \___   /__   \ |__   ___ 
-\ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \   / /\/ _ \    / /\/ '_ \ / _ \
- \  /\  /  __/ | (_| (_) | | | | | |  __/  / / | (_) |  / /  | | | |  __/
-  \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \/   \___/   \/   |_| |_|\___|
-                                                                         
-   _    __ _            _ _  __                                          
-  /_\  / _| |_ ___ _ __| (_)/ _| ___                                     
- //_ \| |_| __/ _ \ '__| | | |_ / _ \                                    
-/  _  \  _| ||  __/ |  | | |  _|  __/                                    
-\_/ \_/_|  \__\___|_|  |_|_|_|  \___| 
 
-        ''')
+   _    _      _                            _____       _____ _          
+  | |  | |    | |                          |_   _|     |_   _| |         
+  | |  | | ___| | ___ ___  _ __ ___   ___    | | ___     | | | |__   ___ 
+  | |/\| |/ _ \ |/ __/ _ \| '_ ` _ \ / _ \   | |/ _ \    | | | '_ \ / _ \            
+  \  /\  /  __/ | (_| (_) | | | | | |  __/   | | (_) |   | | | | | |  __/
+   \/  \/ \___|_|\___\___/|_| |_| |_|\___|   \_/\___/    \_/ |_| |_|\___|
+                ___   __ _            _ _  __                                        
+               / _ \ / _| |          | (_)/ _|                                       
+              / /_\ \ |_| |_ ___ _ __| |_| |_ ___                                    
+              |  _  |  _| __/ _ \ '__| | |  _/ _ \                                   
+              | | | | | | ||  __/ |  | | | ||  __/                                   
+              \_| |_/_|  \__\___|_|  |_|_|_| \___|                                   
+''')
 
 ####### ------------------------------------- HELL GRAPHIC --------------------------------- #######
 def ascii_devil():
@@ -428,6 +429,67 @@ def ascii_probing_sign():
    `--'    `------' `-----'    `--'   `--'   `--'  `--'  `-----'    
           ''')
 
+######-------------------------------------------Cracking and Breaking -----------------------------------------######
+def ascii_cracking_breaking_graphic():
+    print('''
+           .
+       |
+       |
+    ,-'"`-.
+  ,'       `.
+  |  _____  |      .-( HEY baby,lets go out)
+  | (_o_o_) |    ,'    ( and kill all humans.)
+  |         | ,-'
+  | |HHHHH| |
+  | |HHHHH| |
+-'`-._____.-'`-
+    ''')
+
+def ascii_cracking_breaking():
+    print('''
+    
+
+ ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄    ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄        ▄  ▄▄▄▄▄▄▄▄▄▄▄ 
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌  ▐░▌▐░░░░░░░░░░░▌▐░░▌      ▐░▌▐░░░░░░░░░░░▌
+▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░▌ ▐░▌  ▀▀▀▀█░█▀▀▀▀ ▐░▌░▌     ▐░▌▐░█▀▀▀▀▀▀▀▀▀ 
+▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌          ▐░▌▐░▌       ▐░▌     ▐░▌▐░▌    ▐░▌▐░▌          
+▐░▌          ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░▌          ▐░▌░▌        ▐░▌     ▐░▌ ▐░▌   ▐░▌▐░▌ ▄▄▄▄▄▄▄▄ 
+▐░▌          ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌          ▐░░▌         ▐░▌     ▐░▌  ▐░▌  ▐░▌▐░▌▐░░░░░░░░▌
+▐░▌          ▐░█▀▀▀▀█░█▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░▌          ▐░▌░▌        ▐░▌     ▐░▌   ▐░▌ ▐░▌▐░▌ ▀▀▀▀▀▀█░▌
+▐░▌          ▐░▌     ▐░▌  ▐░▌       ▐░▌▐░▌          ▐░▌▐░▌       ▐░▌     ▐░▌    ▐░▌▐░▌▐░▌       ▐░▌
+▐░█▄▄▄▄▄▄▄▄▄ ▐░▌      ▐░▌ ▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌ ▐░▌  ▄▄▄▄█░█▄▄▄▄ ▐░▌     ▐░▐░▌▐░█▄▄▄▄▄▄▄█░▌
+▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░▌  ▐░▌▐░░░░░░░░░░░▌▐░▌      ▐░░▌▐░░░░░░░░░░░▌
+ ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀    ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀        ▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
+                                                                                                   
+ ▄▄▄▄▄▄▄▄▄▄▄  ▄▄        ▄  ▄▄▄▄▄▄▄▄▄▄                                                              
+▐░░░░░░░░░░░▌▐░░▌      ▐░▌▐░░░░░░░░░░▌                                                             
+▐░█▀▀▀▀▀▀▀█░▌▐░▌░▌     ▐░▌▐░█▀▀▀▀▀▀▀█░▌                                                            
+▐░▌       ▐░▌▐░▌▐░▌    ▐░▌▐░▌       ▐░▌                                                            
+▐░█▄▄▄▄▄▄▄█░▌▐░▌ ▐░▌   ▐░▌▐░▌       ▐░▌                                                            
+▐░░░░░░░░░░░▌▐░▌  ▐░▌  ▐░▌▐░▌       ▐░▌                                                            
+▐░█▀▀▀▀▀▀▀█░▌▐░▌   ▐░▌ ▐░▌▐░▌       ▐░▌                                                            
+▐░▌       ▐░▌▐░▌    ▐░▌▐░▌▐░▌       ▐░▌                                                            
+▐░▌       ▐░▌▐░▌     ▐░▐░▌▐░█▄▄▄▄▄▄▄█░▌                                                            
+▐░▌       ▐░▌▐░▌      ▐░░▌▐░░░░░░░░░░▌                                                             
+ ▀         ▀  ▀        ▀▀  ▀▀▀▀▀▀▀▀▀▀                                                              
+                                                                                                   
+ ▄▄▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄    ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄        ▄  ▄▄▄▄▄▄▄▄▄▄▄ 
+▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌  ▐░▌▐░░░░░░░░░░░▌▐░░▌      ▐░▌▐░░░░░░░░░░░▌
+▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░▌ ▐░▌  ▀▀▀▀█░█▀▀▀▀ ▐░▌░▌     ▐░▌▐░█▀▀▀▀▀▀▀▀▀ 
+▐░▌       ▐░▌▐░▌       ▐░▌▐░▌          ▐░▌       ▐░▌▐░▌▐░▌       ▐░▌     ▐░▌▐░▌    ▐░▌▐░▌          
+▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌▐░▌░▌        ▐░▌     ▐░▌ ▐░▌   ▐░▌▐░▌ ▄▄▄▄▄▄▄▄ 
+▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░▌         ▐░▌     ▐░▌  ▐░▌  ▐░▌▐░▌▐░░░░░░░░▌
+▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀█░█▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░▌░▌        ▐░▌     ▐░▌   ▐░▌ ▐░▌▐░▌ ▀▀▀▀▀▀█░▌
+▐░▌       ▐░▌▐░▌     ▐░▌  ▐░▌          ▐░▌       ▐░▌▐░▌▐░▌       ▐░▌     ▐░▌    ▐░▌▐░▌▐░▌       ▐░▌
+▐░█▄▄▄▄▄▄▄█░▌▐░▌      ▐░▌ ▐░█▄▄▄▄▄▄▄▄▄ ▐░▌       ▐░▌▐░▌ ▐░▌  ▄▄▄▄█░█▄▄▄▄ ▐░▌     ▐░▐░▌▐░█▄▄▄▄▄▄▄█░▌
+▐░░░░░░░░░░▌ ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░▌  ▐░▌▐░░░░░░░░░░░▌▐░▌      ▐░░▌▐░░░░░░░░░░░▌
+ ▀▀▀▀▀▀▀▀▀▀   ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀  ▀    ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀        ▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
+
+
+    ''')
+
+
+
 ######## ----------------------------------------------- import list -------------------------------------------------- #######
 import os
 os.system('python3 -m pip install pyqt5 --upgrade')
@@ -504,6 +566,30 @@ def Anonsurf():
         clear_screen()
         print(colored('Come back when you ready to surf anonymously!' , 'red'))
         main_menu()
+
+######## -------------------------- DEEP SOUND --------------------------------------- ########
+def Deep_Sound():
+    print(colored('Welcome to Deep Sound, please install before using' , 'red'))
+    print('''
+          Deep Sound, is a repo steganography tool and audio converter that hides secret data in the audio files for safe data transfers.
+          This program is a GUI (Graphical User Interface) that is easy to use.
+          ''')
+    print("1) Install")
+    print("2) Run")
+    print("3) Exit / Return to Afterlife")
+    option = input("> ")
+
+    if option == (1):
+        clear_screen()
+        os.system("sudo git clone https://github.com/Jpinsoft/DeepSound.git")
+        os.system("cd Deep-Sound && ./installer.sh && cd -- && sudo rm-r Deep-Sound")
+    elif option == (2):
+        clear_screen()
+        os.system("sudo DeepSound start")
+    elif option == (3):
+        clear_screen()
+        print(colored('Thanks for covering your files with that angelic voice' , 'red'))
+        main_menu()
  
  
 ####### ------------------- HEAVEN BRANCH ------------------------------------- #######
@@ -527,6 +613,130 @@ def Heaven():
         clear_screen()
         Heaven()     
 
+########### ----------------------------------------Holehe-----------------------------------------------------------------##########
+def holehe():
+
+    os.system("git clone https://github.com/megadose/holehe.git")
+    os.chdir("holehe")
+    os.system("docker build . -t my-holehe-image")
+    clear_screen()
+    email = input("Enter the email to search: ")
+    subprocess.run(["docker", "run", "my-holehe-image", email])
+    process = subprocess.Popen(
+        ["docker", "run", "my-holehe-image", "holehe", email],
+        stdout=subprocess.PIPE,
+    )
+    result = process.communicate()[0].decode("utf-8")
+    result_output = result.replace("[+]", f"{Fore.GREEN}[+]{Style.RESET_ALL}")
+    result_output = result_output.replace("[-]", f"{Fore.RED}[-]{Style.RESET_ALL}")
+    result_output = result_output.replace(
+        "[x]", f"{Fore.YELLOW}[x]{Style.RESET_ALL}"
+    )
+    result_output = result_output.replace(
+        "[!]", f"{Fore.MAGENTA}[!]{Style.RESET_ALL}"
+    )
+    print(result_output)
+
+###########---------------------------------------------------Discord Member Recon--------------------------------------------------------##########
+def discord_member_recon():
+
+    print('''Discord Member Recon is a discord bot that is placed on your server. 
+          By placing this bot, it will extract data from all members in the server.
+          Taking information and placing it into an Excel spreadsheet and an HTML.
+          ''')
+    
+
+######### -----------------------------------------------Monitoring and Recon List ---------------------------------------######
+def Monitoring_and_Recon():
+
+        print(colored('Welcome to Monitoring and Recon, all of your pre-hacking needs' , 'red' , attrs= [ 'bold' ]))
+        print("1) Holehe")
+        print("2) Discord Member Recon")
+        print("3) ")
+        print("4) ")
+        print("5) ")
+        print("6) ")
+        print("7) ")
+        print("8) ")
+        print("9) ")
+        print("10) ")
+        print("11) ")
+        option = ('> ')
+
+        if option == "1":
+            clear_screen()
+            holehe()
+        
+        elif option == "2":
+            clear_screen()
+            discord_member_recon()
+
+####### ------------------------------------ Probing and Testing -----------------------------------------------------############
+def Probing():
+
+        print(colored('Probing and Testing' , 'red' , attrs= [ 'bold' ]))
+        print("1) ")
+        print("2) ")
+        print("3) ")
+        print("4) ")
+        print("5) ")
+        print("6) ")
+        print("7) ")
+        print("8) ")
+        print("9) ")
+        option = ('> ')
+
+
+##### -------------------------------------------Cracking and Breaking ---------------------------------------------#####
+def cracking_and_breaking():
+    
+    print("What Are We Cracking Into Today?")
+    print("1) Passwords")
+    print("2) Accounts")
+
+
+
+
+######## ------------------------------------ HELL BRANCH ----------------------------------------------------------########
+def Hell():
+    ascii_devil()
+    ascii_hell_sign()
+    
+    print(colored('Welcome To Hell, Pick Your Posion' , 'red' , attrs=[ 'blink' , 'bold']))
+    print("1) Monitoring and Recon")
+    print("2) Probing and Testing")
+    print("3) Cracking and Breaking")
+    option = ('< ')
+
+    if option == (1):
+        clear_screen()
+        ascii_monitoring_recon_graphic()
+        ascii_monitoring_recon_sign()
+        Monitoring_and_Recon()
+
+    elif option == (2):
+        clear_screen()
+        ascii_probing_graphic()
+        ascii_probing_sign()
+        Probing()
+
+    elif option == (3):
+        clear_screen()
+        ascii_cracking_breaking_graphic()
+        ascii_cracking_breaking()
+        cracking_and_breaking()
+
+####### ---------------------------------------- PURGATORY ---------------------------------------------------------########
+def Purgatory():
+    ascii_purgatory()
+    ascii_purgatory_sign()
+
+    print(colored('Welcome To Purgatory, Where Do You Wander?' , 'red'))
+    print("1) Dark Websites")
+    print("2) Clear Websites")
+    print("3) Reading Material")
+    print("4) Forums")
+    
 ######## ------------------------------------ MAIN MENU ------------------------------------------------------------ ############
 def main_menu():
     clear_screen()
@@ -564,109 +774,3 @@ def main_menu():
 
 if __name__ == "__main__":
     main_menu()
-
-
-######## -------------------------- DEEP SOUND --------------------------------------- ########
-def Deep_Sound():
-    print(colored('Welcome to Deep Sound, please install before using' , 'red'))
-    print('''
-          Deep Sound, is a repo steganography tool and audio converter that hides secret data in the audio files for safe data transfers.
-          This program is a GUI (Graphical User Interface) that is easy to use.
-          ''')
-    print("1) Install")
-    print("2) Run")
-    print("3) Exit / Return to Afterlife")
-    option = input("> ")
-
-    if option == (1):
-        clear_screen()
-        os.system("sudo git clone https://github.com/Jpinsoft/DeepSound.git")
-        os.system("cd Deep-Sound && ./installer.sh && cd -- && sudo rm-r Deep-Sound")
-    elif option == (2):
-        clear_screen()
-        os.system("sudo DeepSound start")
-    elif option == (3):
-        clear_screen()
-        print(colored('Thanks for covering your files with that angelic voice' , 'red'))
-        main_menu()
-
-
-######## ------------------------------------ HELL BRANCH ----------------------------------------------------------########
-def Hell():
-    ascii_devil()
-    ascii_hell_sign()
-    
-    print(colored('Welcome To Hell, Pick Your Posion' , 'red' , attrs=[ 'blink' , 'bold']))
-    print("1) Monitoring and Recon")
-    print("2) Probing and Testing")
-    print("3) ")
-    option = ('> ')
-
-    if option == (1):
-        clear_screen()
-        ascii_monitoring_recon_graphic()
-        ascii_monitoring_recon_sign()
-        Monitoring_and_Recon()
-
-    elif option == (2):
-        clear_screen()
-        ascii_probing_graphic()
-        ascii_probing_sign()
-        Probing()
-
-    elif option == (3):
-        clear_screen()
-
-######### -----------------------------------------------Monitoring and Recon List ---------------------------------------######
-def Monitoring_and_Recon():
-
-        print(colored('Welcome to Monitoring and Recon, all of your pre-hacking needs' , 'red' , attrs= [ 'bold' ]))
-        print("1) Canary Tokens")
-        print("2) Follow That Page")
-        print("3) DNS Dumpster")
-        print("4) DNS Viz")
-        print("5) Hyper Stat")
-        print("6) Pentester")
-        print("7) Instagram Post Locations")
-        print("8) Multiplatform Post Locations")
-        print("9) Wigle")
-        print("10) Cyber Defence Search Engine")
-        print("11) Email Tracer")
-        option = ('> ')
-
-####### ------------------------------------ Probing and Testing -----------------------------------------------------############
-def Probing():
-
-        print(colored('Probing and Testing' , 'red' , attrs= [ 'bold' ]))
-        print("1) Spy Extension")
-        print("2) Sudo Piggy Back")
-        print("3) Wifite(2)")
-        print("4) PSudo Hash")
-        print("5) Attack Surface Maps")
-        print("6) USB Rubber Ducky Payloads")
-        print("7) Villian")
-        print("8) Voicemail Automator")
-        print("9) GTFO BINS")
-        option = ('> ')
-
-        
-
-####### ---------------------------------------- PURGATORY ---------------------------------------------------------########
-def Purgatory():
-    ascii_purgatory()
-    ascii_purgatory_sign()
-
-    print(colored('Welcome To Purgatory, Where Do You Wander?' , 'red'))
-    print("1) Dark Websites")
-    print("2) Clear Websites")
-    print("3) Reading Material")
-    print("4) Forums")
-    
-    
-    
-    
-    
-    
-    
-    
-    
