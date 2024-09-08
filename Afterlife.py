@@ -661,7 +661,7 @@ def Monitoring_and_Recon():
         print("9) ")
         print("10) ")
         print("11) ")
-        option = ('> ')
+        option = input("> ")
 
         if option == "1":
             clear_screen()
@@ -684,6 +684,7 @@ def Wef():
     print("1) Install / First Time Run")
     print("2) Run")
     print("3) Main Menu")
+    option == input("> ")
 
     if option == "1":
         clear_screen()
@@ -713,7 +714,7 @@ def Probing():
         print("7) ")
         print("8) ")
         print("9) ")
-        option = ('> ')
+        option = input("> ")
 
         if option == "1":
             clear_screen()
@@ -727,7 +728,7 @@ def cracking_and_breaking():
     print("What Are We Cracking Into Today?")
     print("1) Passwords")
     print("2) Accounts")
-    option = ("> ")
+    option = input("> ")
 
     if option == "1":
         clear_screen()
@@ -749,9 +750,9 @@ def Hell():
     print("1) Monitoring and Recon")
     print("2) Probing and Testing")
     print("3) Cracking and Breaking")
-    option = ('< ')
+    option = input("< ")
 
-    if option == (1):
+    if option == "1":
         clear_screen()
         ascii_monitoring_recon_graphic()
         ascii_monitoring_recon_sign()
@@ -779,7 +780,7 @@ def Purgatory():
     print("2) Clear Websites")
     print("3) Reading Material")
     print("4) Forums")
-    
+    option == input("< ")
 ######## ------------------------------------ MAIN MENU ------------------------------------------------------------ ############
 def main_menu():
     clear_screen()
