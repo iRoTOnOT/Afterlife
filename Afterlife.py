@@ -671,11 +671,40 @@ def Monitoring_and_Recon():
             clear_screen()
             discord_member_recon()
 
+#######------------------------------------------- Wef ------------------------------------------------------------#########
+def Wef():
+
+    print('''Wef is a multi tool for Wi-Fi attacks. It provides the following.
+          DoS Attacks / WEP Attacks / Evil Twin Attach / WPS Attack / Handshake Attacks
+          
+          After install, configuration for the program will be needed.
+          You will lose internet connection while the application is running.
+          ''')
+
+    print("1) Install / First Time Run")
+    print("2) Run")
+    print("3) Main Menu")
+
+    if option == "1":
+        clear_screen()
+        os.system("git clone https://github.com/D3Ext/WEF")
+        os.chdir("cd WEF")
+        os.system("sudo bash wef -i wlan0")
+
+    elif option == "2":
+        clear_screen()
+        os.chdir("cd WEF")
+        os.system("sudo bash wef -i wlan0")
+
+    elif option == "3":
+        clear_screen()
+        main_menu()
+
 ####### ------------------------------------ Probing and Testing -----------------------------------------------------############
 def Probing():
 
         print(colored('Probing and Testing' , 'red' , attrs= [ 'bold' ]))
-        print("1) ")
+        print("1) Wef")
         print("2) ")
         print("3) ")
         print("4) ")
@@ -686,6 +715,11 @@ def Probing():
         print("9) ")
         option = ('> ')
 
+        if option == "1":
+            clear_screen()
+            Wef()
+
+
 
 ##### -------------------------------------------Cracking and Breaking ---------------------------------------------#####
 def cracking_and_breaking():
@@ -693,8 +727,17 @@ def cracking_and_breaking():
     print("What Are We Cracking Into Today?")
     print("1) Passwords")
     print("2) Accounts")
+    option = ("> ")
 
+    if option == "1":
+        clear_screen()
+        passwords()
 
+    elif option == "2":
+        clear_screen()
+        accounts()
+
+  
 
 
 ######## ------------------------------------ HELL BRANCH ----------------------------------------------------------########
@@ -742,6 +785,16 @@ def main_menu():
     clear_screen()
     ascii_Afterlife()
     ascii_welcome()
+
+    print('''
+    @------------------------------------------------------@
+    @--------------- Created By John Redpath --------------@
+    @------------------------------------------------------@
+
+          ''')
+
+
+    print("For Best Use, Put Afterlife In Own Folder")
     
     print(colored('Which Path Do you Choose?' , 'red' , attrs=['reverse' , 'blink' , 'bold']))
     print(colored('Please pick a number between 1-3' , 'red'))
