@@ -773,13 +773,13 @@ def Hell():
         ascii_monitoring_recon_sign()
         Monitoring_and_Recon()
 
-    elif option == (2):
+    elif option == "2":
         clear_screen()
         ascii_probing_graphic()
         ascii_probing_sign()
         Probing()
 
-    elif option == (3):
+    elif option == "3":
         clear_screen()
         ascii_cracking_breaking_graphic()
         ascii_cracking_breaking()
