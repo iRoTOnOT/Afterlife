@@ -238,14 +238,14 @@ def ascii_purgatory():
 
 ####### ----------------------------------------- PURGATORY SIGN ------------------------------------------- #######
 def ascii_purgatory_sign():
-    print(colored('''
+    print('''
    ___                       _                   
   / _ \_   _ _ __ __ _  __ _| |_ ___  _ __ _   _ 
  / /_)/ | | | '__/ _` |/ _` | __/ _ \| '__| | | |
 / ___/| |_| | | | (_| | (_| | || (_) | |  | |_| |
 \/     \__,_|_|  \__, |\__,_|\__\___/|_|   \__, |
                  |___/                     |___/ 
-''' , 'purple'))
+''')
 
 
 ####### ------------------------------------------------- Monitoring and Recon ------------------------------------------#######
@@ -491,6 +491,7 @@ def ascii_cracking_breaking():
 
 
 ######## ----------------------------------------------- import list -------------------------------------------------- #######
+from optparse import Option
 import os
 os.system('python3 -m pip install pyqt5 --upgrade')
 os.system('pip3 install termcolor')
@@ -616,26 +617,14 @@ def Heaven():
 ########### ----------------------------------------Holehe-----------------------------------------------------------------##########
 def holehe():
 
-    os.system("git clone https://github.com/megadose/holehe.git")
-    os.chdir("holehe")
-    os.system("docker build . -t my-holehe-image")
-    clear_screen()
-    email = input("Enter the email to search: ")
-    subprocess.run(["docker", "run", "my-holehe-image", email])
-    process = subprocess.Popen(
-        ["docker", "run", "my-holehe-image", "holehe", email],
-        stdout=subprocess.PIPE,
-    )
-    result = process.communicate()[0].decode("utf-8")
-    result_output = result.replace("[+]", f"{Fore.GREEN}[+]{Style.RESET_ALL}")
-    result_output = result_output.replace("[-]", f"{Fore.RED}[-]{Style.RESET_ALL}")
-    result_output = result_output.replace(
-        "[x]", f"{Fore.YELLOW}[x]{Style.RESET_ALL}"
-    )
-    result_output = result_output.replace(
-        "[!]", f"{Fore.MAGENTA}[!]{Style.RESET_ALL}"
-    )
-    print(result_output)
+    print("This page is still under construction")
+
+    print("1) Go back to Main Menu")
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        main_menu()
 
 ###########---------------------------------------------------Discord Member Recon--------------------------------------------------------##########
 def discord_member_recon():
@@ -644,6 +633,16 @@ def discord_member_recon():
           By placing this bot, it will extract data from all members in the server.
           Taking information and placing it into an Excel spreadsheet and an HTML.
           ''')
+    
+
+    print("This page is still under construction")
+
+    print("1) Go back to Main Menu")
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        main_menu()
     
 
 ######### -----------------------------------------------Monitoring and Recon List ---------------------------------------######
@@ -684,8 +683,8 @@ def Wef():
     print("1) Install / First Time Run")
     print("2) Run")
     print("3) Main Menu")
-    option == input("> ")
-
+    option = input("> ")
+    
     if option == "1":
         clear_screen()
         os.system("git clone https://github.com/D3Ext/WEF")
@@ -704,23 +703,39 @@ def Wef():
 ####### ------------------------------------ Probing and Testing -----------------------------------------------------############
 def Probing():
 
-        print(colored('Probing and Testing' , 'red' , attrs= [ 'bold' ]))
         print("1) Wef")
-        print("2) ")
-        print("3) ")
-        print("4) ")
-        print("5) ")
-        print("6) ")
-        print("7) ")
-        print("8) ")
-        print("9) ")
         option = input("> ")
 
         if option == "1":
             clear_screen()
             Wef()
 
+#######---------------------------------------- Passwords -----------------------------------------------#######
 
+def passwords():
+
+
+    print("This page is still under construction")
+
+    print("1) Go back to Main Menu")
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        main_menu()
+
+######### -----------------------------------------------------Accounts---------------------------------------------------#########
+
+def accounts():
+
+    print("This page is still under construction")
+
+    print("1) Go back to Main Menu")
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        main_menu()
 
 ##### -------------------------------------------Cracking and Breaking ---------------------------------------------#####
 def cracking_and_breaking():
@@ -770,6 +785,159 @@ def Hell():
         ascii_cracking_breaking()
         cracking_and_breaking()
 
+##########-------------------------------------------------Dark Web Search Engines---------------------------------------########
+
+def search_engines():
+
+    print('''
+          
+          Dark Web Search Engines.
+          
+          Copy the link and paste it into the Tor Browser.
+          ''')
+
+    print("Torch - http://torchdeedp3i2jigzjdmfpn5ttjhthh5wbmda2rr3jvqjg5p77c54dqd.onion/")
+    print("Excavator - http://2fd6cemt4gmccflhm6imvdfvli3nf7zn6rfrwpsy7uhxrgbypvwf5fad.onion/")
+    print("Deep Search - http://search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion/")
+    print("Tor66 - http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/")
+    print("Tordex - http://tordexu73joywapk2txdr54jed4imqledpcvcuf75qsas2gwdgksvnyd.onion/")
+    print("Tor Search Engine - http://searchesqafmar2ocusr443hnolhmrxek5xu3hrw3wliwlzmdywvjtqd.onion/index.php")
+    print("Submarine - http://no6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad.onion/index.php")
+    print("OnionLand Search - http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/")
+    print("Hoodle - http://nr2dvqdot7yw6b5poyjb7tzot7fjrrweb2fhugvytbbio7ijkrvicuid.onion/")
+    print("Amnesia - http://amnesia7u5odx5xbwtpnqk3edybgud5bmiagu75bnqx2crntw5kry7ad.onion/")
+    print("OnionLand - http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/")
+    print("Venus - http://venusoseaqnafjvzfmrcpcq6g47rhd7sa6nmzvaa4bj5rp6nm5jl7gad.onion/")
+    print("Onion Center - http://5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion/javaoff")
+    print("Light - http://light32oppwtsuqbdzysloalbsqksjfoau237z7qzbujcbbklgfa25id.onion/")
+    print("---------------------------------------------------------------------------------------------------------")
+    
+    print(colored('Which Path Do you Choose?' , 'red' , attrs=['reverse' , 'blink' , 'bold']))
+    print("1) Return to Main Menu")
+    print("2) Go to Heaven")
+    print("3) Go to Hell")
+    print("4) Go to Purgatory")
+    print("5) Go Back")
+    option = input("> ")
+
+    if option == "1":
+        clear_screen()
+        main_menu()
+
+    elif option == "2":
+        clear_screen()
+        Heaven()
+
+    elif option == "3":
+        clear_screen()
+        Hell()
+
+    elif option == "4":
+        clear_screen()
+        Purgatory()
+
+    elif option == "5":
+        clear_screen()
+        Dark_Websites()
+
+#######--------------------------------------------------------------Dark Web Chatrooms and Forums--------------------------------------########
+
+def chatrooms_forums():
+
+    print("This page is still under construction")
+
+    print("1) Go back to Main Menu")
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        main_menu()
+
+    
+
+########-------------------------------------------------------Dark Web Directories -------------------------------------########
+
+def directories():
+
+    print('''
+          Dark Web Directories
+          
+          COpy the link and paste it into the Tor Browser.
+          ''')
+
+    print("MEGALINKS - http://megaligvlxvyg2qakftplhghbzxatfgawpta5cvafoxfcoxlthofxzid.onion/")
+    print("Fresh Onions - http://freshqfv3bjsc4bz7ajhbvchdtwijyyz5kvlbibokjieazjeyknhhdid.onion/")
+    print("Nexus - http://nexus3xpq52kd7fnobiwwndytystymajamfwoawhppn2wqgqetoucoyd.onion/")
+    print("Dark Listing - http://darkobds5j7xpsncsexzwhzaotyc4sshuiby3wtxslq5jy2mhrulnzad.onion/")
+    print("V3 Paste - http://v3pastedc5jeqahtq77gvu3vz222bcqhlfubfunzjzqedg6jdqqlvgqd.onion/index.php")
+    print("OnionServices - http://onionserh5njpt6tdnvjj3ttfz7ffo6g5la54d5njl5wkqygkh3wxxyd.onion/")
+    print("Wiki Pages - http://uquroyobsaquslaunwkz6bmc3wutpzvwe7mv62xeq64645a57bugnsyd.onion/")
+
+
+
+#######--------------------------------------------------Dark Websites----------------------------------------------########
+
+def Dark_Websites():
+
+    print(colored('These sites are for the Tor network only, use at your own risk' , 'red' , attrs=['reverse' , 'blink' , 'bold']))
+    print("1) Search Engines")
+    print("2) Chatrooms / Forums")
+    print("3) Directories")
+    option = input("> ")
+
+    if option == "1":
+        clear_screen()
+        search_engines()
+
+    elif option == "2":
+        clear_screen()
+        chatrooms_forums()
+
+    elif option == "2":
+        clear_screen()
+        directories()
+
+######---------------------------------------------- Clear Websites-----------------------------------######
+
+def Clear_Websites():
+
+
+    print("This page is still under construction")
+
+    print("1) Go back to Main Menu")
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        main_menu()
+
+#########------------------------------------------Reading Material---------------------------------------########
+
+def Reading_Material():
+
+
+    print("This page is still under construction")
+
+    print("1) Go back to Main Menu")
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        main_menu()
+
+#######---------------------------------------------- Clearnet Forums ---------------------------------------------#######
+def Forums():
+
+    print("This page is still under construction")
+
+    print("1) Go back to Main Menu")
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        main_menu()
+
+
 ####### ---------------------------------------- PURGATORY ---------------------------------------------------------########
 def Purgatory():
     ascii_purgatory()
@@ -780,7 +948,25 @@ def Purgatory():
     print("2) Clear Websites")
     print("3) Reading Material")
     print("4) Forums")
-    option == input("< ")
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        Dark_Websites()
+
+    elif option == "2":
+        clear_screen()
+        Clear_Websites()
+
+    elif option == "3":
+        clear_screen()
+        Reading_Material()
+
+    elif option == "4":
+        clear_screen()
+        Forums()
+
+
 ######## ------------------------------------ MAIN MENU ------------------------------------------------------------ ############
 def main_menu():
     clear_screen()
@@ -788,9 +974,9 @@ def main_menu():
     ascii_welcome()
 
     print('''
-    @------------------------------------------------------@
-    @--------------- Created By John Redpath --------------@
-    @------------------------------------------------------@
+        @------------------------------------------------------@
+        @--------------- Created By John Redpath --------------@
+        @------------------------------------------------------@
 
           ''')
 
@@ -804,6 +990,7 @@ def main_menu():
     print("3) Purgatory")
     print(colored('4) Return To the Living' , 'red'))
     option = input("> ")
+
     if option == "1":
         clear_screen()
         Heaven()
