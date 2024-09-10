@@ -582,9 +582,7 @@ def Anonsurf():
         clear_screen()
         Anonsurf()     
     
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main. Type EXIT to end program.
-          ''')
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 ######## -------------------------- DEEP SOUND --------------------------------------- ########
 def Deep_Sound():
@@ -616,16 +614,14 @@ def Deep_Sound():
 
     elif option == "MAIN":
             clear_screen()
-            main_menn()
+            main_men()
     else:
         print("\033[91m Do not stray from the path, try again\033[0m")
         time.sleep(1)
         clear_screen()
         Deep_Sound()     
     
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
  
 ####### --------------------------------------- HEAVEN BRANCH ------------------------------------- #######
 def Heaven():
@@ -658,9 +654,7 @@ def Heaven():
         clear_screen()
         Heaven()     
     
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
     
 ######### -----------------------------------------------Monitoring and Recon List ---------------------------------------######
 def Monitoring_and_Recon():
@@ -682,9 +676,7 @@ def Monitoring_and_Recon():
             clear_screen()
             Monitoring_and_Recon() 
 
-        print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 #######------------------------------------------- Wef ------------------------------------------------------------#########
 def Wef():
@@ -722,6 +714,8 @@ def Wef():
         clear_screen()
         Wef() 
 
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
+
 ####### ------------------------------------ Probing and Testing -----------------------------------------------------############
 def Probing():
 
@@ -746,9 +740,7 @@ def Probing():
             clear_screen()
             Probing() 
         
-            print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 #######---------------------------------------- Passwords -----------------------------------------------#######
 
@@ -771,9 +763,7 @@ def passwords():
         clear_screen()
         passwords() 
     
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 ######### -----------------------------------------------------Accounts---------------------------------------------------#########
 
@@ -795,9 +785,7 @@ def accounts():
         clear_screen()
         accounts() 
 
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 ##### -------------------------------------------Cracking and Breaking ---------------------------------------------#####
 def cracking_and_breaking():
@@ -828,9 +816,7 @@ def cracking_and_breaking():
         clear_screen()
         cracking_and_breaking() 
 
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 
 ######## ------------------------------------ HELL BRANCH ----------------------------------------------------------########
@@ -876,9 +862,7 @@ def Hell():
         clear_screen()
         Hell() 
 
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 ##########-------------------------------------------------Dark Web Search Engines---------------------------------------########
 
@@ -939,9 +923,7 @@ def search_engines():
         clear_screen()
         search_engines() 
 
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 #######--------------------------------------------------------------Dark Web Chatrooms and Forums--------------------------------------########
 
@@ -964,9 +946,7 @@ def chatrooms_forums():
         clear_screen()
         chatrooms_forums() 
 
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
     
 
@@ -1003,9 +983,7 @@ def directories():
         clear_screen()
         directories() 
 
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 #######--------------------------------------------------Dark Websites----------------------------------------------########
 
@@ -1043,9 +1021,8 @@ def Dark_Websites():
         clear_screen()
         Dark_Websites() 
 
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
     
 ######---------------------------------------------- Clear Websites-----------------------------------######
 
@@ -1072,9 +1049,8 @@ def Clear_Websites():
         clear_screen()
         Clear_Websites() 
 
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 #########------------------------------------------Reading Material---------------------------------------########
 
@@ -1101,9 +1077,8 @@ def Reading_Material():
         clear_screen()
         Reading_Material() 
 
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 #######---------------------------------------------- Clearnet Forums ---------------------------------------------#######
 def Forums():
@@ -1128,9 +1103,8 @@ def Forums():
         clear_screen()
         Forums() 
 
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 
 ####### ---------------------------------------- PURGATORY ---------------------------------------------------------########
@@ -1175,9 +1149,8 @@ def Purgatory():
         clear_screen()
         Purgatory() 
 
-    print('''
-                    Type BACK to go back. Type MAIN to go to the main 
-          ''')
+
+print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 ######## ------------------------------------ MAIN MENU ------------------------------------------------------------ ############
 def main_menu():
