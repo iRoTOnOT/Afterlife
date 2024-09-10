@@ -324,7 +324,7 @@ def ascii_monitoring_recon_graphic():
 ..................................+@@@@.  %@@@@@@@=%@@@@@-.#@@@@@@#.................................
 .....................................=@@@@@@@@@@=.#@@@#..+@@@@@%+...................................
 ..........................................:---+#####%%@@@@%#=:......................................
-''' , 'dark green'))
+''' , 'green'))
 
 
 
@@ -535,7 +535,24 @@ def menu():
     clear_screen()
 
     main_menu()
+
+
+#######-----------------------------------Header-------------------------------------------------------------#########
+
+
+
+########------------------------------------Foot--------------------------------------------------------------------------########
+def foot():
     
+    print(" ")
+    print(" ")
+    print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
+    print(" ")
+    print(" ")
+
+
+
+
  ####### --------------------------- ANON SURF --------------------------------- ########
 def Anonsurf():
 
@@ -546,7 +563,13 @@ def Anonsurf():
     print("3) Stop")
     print("4) Status") 
     print("5) Exit Anon Surf / Return To Afterlife")
+
+    foot()
+
     option = input("> ")
+
+   
+
 
     if option == "1":
         clear_screen()
@@ -582,8 +605,7 @@ def Anonsurf():
         time.sleep(1)
         clear_screen()
         Anonsurf()     
-    
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
+
 
 ######## -------------------------- DEEP SOUND --------------------------------------- ########
 def Deep_Sound():
@@ -595,6 +617,9 @@ def Deep_Sound():
     print("1) Install")
     print("2) Run")
     print("3) Exit / Return to Afterlife")
+
+    foot()
+
     option = input("> ")
 
     if option == (1):
@@ -622,7 +647,6 @@ def Deep_Sound():
         clear_screen()
         Deep_Sound()     
     
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
  
 ####### --------------------------------------- HEAVEN BRANCH ------------------------------------- #######
 def Heaven():
@@ -631,6 +655,9 @@ def Heaven():
 
     print("1) Anonsurf")
     print("2) Deep Sound")
+
+    foot()
+
     option = input("> ")
 
     if option == "1":
@@ -655,12 +682,14 @@ def Heaven():
         clear_screen()
         Heaven()     
     
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
     
 ######### -----------------------------------------------Monitoring and Recon List ---------------------------------------######
 def Monitoring_and_Recon():
 
         print("This page is still under construction")
+        
+        foot()
+        
         option = input("< ")
 
         if option == "BACK":
@@ -677,7 +706,6 @@ def Monitoring_and_Recon():
             clear_screen()
             Monitoring_and_Recon() 
 
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 #######------------------------------------------- Wef ------------------------------------------------------------#########
 def Wef():
@@ -692,6 +720,9 @@ def Wef():
     print("1) Install / First Time Run")
     print("2) Run")
     print("3) Main Menu")
+    
+    foot()
+    
     option = input("> ")
     
     if option == "1":
@@ -715,12 +746,14 @@ def Wef():
         clear_screen()
         Wef() 
 
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 ####### ------------------------------------ Probing and Testing -----------------------------------------------------############
 def Probing():
 
         print("1) Wef")
+        
+        foot()
+        
         option = input("> ")
 
         if option == "1":
@@ -741,7 +774,6 @@ def Probing():
             clear_screen()
             Probing() 
         
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 #######---------------------------------------- Passwords -----------------------------------------------#######
 
@@ -749,6 +781,9 @@ def passwords():
 
 
     print("This page is still under construction")
+    
+    foot()
+    
     option = input("< ")
     
     if option == "BACK":
@@ -764,13 +799,15 @@ def passwords():
         clear_screen()
         passwords() 
     
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 ######### -----------------------------------------------------Accounts---------------------------------------------------#########
 
 def accounts():
 
     print("This page is still under construction")
+    
+    foot()
+    
     option = input("< ")
 
     if option == "BACK":
@@ -786,7 +823,6 @@ def accounts():
         clear_screen()
         accounts() 
 
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 ##### -------------------------------------------Cracking and Breaking ---------------------------------------------#####
 def cracking_and_breaking():
@@ -794,6 +830,9 @@ def cracking_and_breaking():
     print("What Are We Cracking Into Today?")
     print("1) Passwords")
     print("2) Accounts")
+
+    foot()
+
     option = input("> ")
 
     if option == "1":
@@ -817,7 +856,6 @@ def cracking_and_breaking():
         clear_screen()
         cracking_and_breaking() 
 
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 
 ######## ------------------------------------ HELL BRANCH ----------------------------------------------------------########
@@ -829,6 +867,9 @@ def Hell():
     print("1) Monitoring and Recon")
     print("2) Probing and Testing")
     print("3) Cracking and Breaking")
+   
+    foot()
+   
     option = input("< ")
 
     if option == "1":
@@ -863,7 +904,6 @@ def Hell():
         clear_screen()
         Hell() 
 
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 ##########-------------------------------------------------Dark Web Search Engines---------------------------------------########
 
@@ -896,6 +936,9 @@ def search_engines():
     print("1) Go to Heaven")
     print("2) Go to Hell")
     print("3) Go to Purgatory")
+    
+    foot()
+    
     option = input("> ")
 
     if option == "1":
@@ -924,13 +967,15 @@ def search_engines():
         clear_screen()
         search_engines() 
 
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 #######--------------------------------------------------------------Dark Web Chatrooms and Forums--------------------------------------########
 
 def chatrooms_forums():
 
     print("This page is still under construction")
+    
+    foot()
+    
     option = input("< ")
 
     if option == "BACK":
@@ -947,7 +992,6 @@ def chatrooms_forums():
         clear_screen()
         chatrooms_forums() 
 
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
     
 
@@ -968,6 +1012,9 @@ def directories():
     print("V3 Paste - http://v3pastedc5jeqahtq77gvu3vz222bcqhlfubfunzjzqedg6jdqqlvgqd.onion/index.php")
     print("OnionServices - http://onionserh5njpt6tdnvjj3ttfz7ffo6g5la54d5njl5wkqygkh3wxxyd.onion/")
     print("Wiki Pages - http://uquroyobsaquslaunwkz6bmc3wutpzvwe7mv62xeq64645a57bugnsyd.onion/")
+
+    foot()
+
     option = input("< ")
 
     if option == "BACK":
@@ -984,7 +1031,6 @@ def directories():
         clear_screen()
         directories() 
 
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 #######--------------------------------------------------Dark Websites----------------------------------------------########
 
@@ -994,6 +1040,9 @@ def Dark_Websites():
     print("1) Search Engines")
     print("2) Chatrooms / Forums")
     print("3) Directories")
+
+    foot()
+    
     option = input("> ")
 
     if option == "1":
@@ -1023,7 +1072,6 @@ def Dark_Websites():
         Dark_Websites() 
 
 
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
     
 ######---------------------------------------------- Clear Websites-----------------------------------######
 
@@ -1032,8 +1080,8 @@ def Clear_Websites():
 
     print("This page is still under construction")
 
-    print("Go Back")
-    print("Go To Main Menu")
+    foot()
+
     option = ("> ")
 
     if option == "BACK":
@@ -1051,7 +1099,6 @@ def Clear_Websites():
         Clear_Websites() 
 
 
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 #########------------------------------------------Reading Material---------------------------------------########
 
@@ -1060,8 +1107,8 @@ def Reading_Material():
 
     print("This page is still under construction")
 
-    print("Go Back")
-    print("Go To Main Menu")
+    foot()
+
     option = ("> ")
 
     if option == "BACK":
@@ -1079,15 +1126,14 @@ def Reading_Material():
         Reading_Material() 
 
 
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 #######---------------------------------------------- Clearnet Forums ---------------------------------------------#######
 def Forums():
 
     print("This page is still under construction")
     
-    print("Go Back")
-    print("Go To Main Menu")
+    foot()
+    
     option = ("> ")
 
     if option == "BACK":
@@ -1105,7 +1151,6 @@ def Forums():
         Forums() 
 
 
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 
 ####### ---------------------------------------- PURGATORY ---------------------------------------------------------########
@@ -1118,7 +1163,12 @@ def Purgatory():
     print("2) Clear Websites")
     print("3) Reading Material")
     print("4) Forums")
+    
+    foot()
+    
     option = input("< ")
+
+
 
     if option == "1":
         clear_screen()
@@ -1151,7 +1201,6 @@ def Purgatory():
         Purgatory() 
 
 
-print(colored('Type BACK to go back. Type MAIN to go to the main. Type EXIT to close the program' ,  'red' , attrs=['reverse' , 'blink' , 'bold']))
 
 ######## ------------------------------------ MAIN MENU ------------------------------------------------------------ ############
 def main_menu():
