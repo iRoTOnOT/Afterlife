@@ -399,7 +399,7 @@ def ascii_probing_graphic():
                          ..... .=...   ....::*..++....                                               
                                 .*..-:*+*-.:-##....                                                  
                                 .:*=-+*#*=.........                                                  
-''' , 'dark red'))
+''' , 'red'))
 
 def ascii_probing_sign():
     print('''
@@ -537,6 +537,7 @@ def menu():
     
  ####### --------------------------- ANON SURF --------------------------------- ########
 def Anonsurf():
+
     print(colored('Welcome to Anon Surf, please install before running' , 'red'))
     print("Anon surf puts your internet traffic through Tor to allow for more protective web browsing")
     print("1) Install")
@@ -567,6 +568,23 @@ def Anonsurf():
         clear_screen()
         print(colored('Come back when you ready to surf anonymously!' , 'red'))
         main_menu()
+    elif option == "BACK":
+        clear_screen()
+        Heaven()
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+    elif option == "EXIT":
+        exit()
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Anonsurf()     
+    
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main. Type EXIT to end program.
+          ''')
 
 ######## -------------------------- DEEP SOUND --------------------------------------- ########
 def Deep_Sound():
@@ -592,8 +610,24 @@ def Deep_Sound():
         print(colored('Thanks for covering your files with that angelic voice' , 'red'))
         main_menu()
  
+    elif option == "BACK":
+            clear_screen()
+            Heaven()
+
+    elif option == "MAIN":
+            clear_screen()
+            main_menn()
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Deep_Sound()     
+    
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
  
-####### ------------------- HEAVEN BRANCH ------------------------------------- #######
+####### --------------------------------------- HEAVEN BRANCH ------------------------------------- #######
 def Heaven():
     ascii_icarus()
     ascii_heaven_sign()
@@ -605,70 +639,52 @@ def Heaven():
     if option == "1":
         clear_screen()
         Anonsurf()
+
     elif option == "2":
         clear_screen()
         Deep_Sound()
+
+    elif option == "BACK":
+            clear_screen()
+            main_menu()
+
+    elif option == "MAIN":
+            clear_screen()
+            main_menu()
+
     else:
         print("\033[91m Do not stray from the path, try again\033[0m")
         time.sleep(1)
         clear_screen()
         Heaven()     
-
-########### ----------------------------------------Holehe-----------------------------------------------------------------##########
-def holehe():
-
-    print("This page is still under construction")
-
-    print("1) Go back to Main Menu")
-    option = input("< ")
-
-    if option == "1":
-        clear_screen()
-        main_menu()
-
-###########---------------------------------------------------Discord Member Recon--------------------------------------------------------##########
-def discord_member_recon():
-
-    print('''Discord Member Recon is a discord bot that is placed on your server. 
-          By placing this bot, it will extract data from all members in the server.
-          Taking information and placing it into an Excel spreadsheet and an HTML.
+    
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
           ''')
     
-
-    print("This page is still under construction")
-
-    print("1) Go back to Main Menu")
-    option = input("< ")
-
-    if option == "1":
-        clear_screen()
-        main_menu()
-    
-
 ######### -----------------------------------------------Monitoring and Recon List ---------------------------------------######
 def Monitoring_and_Recon():
 
-        print(colored('Welcome to Monitoring and Recon, all of your pre-hacking needs' , 'red' , attrs= [ 'bold' ]))
-        print("1) Holehe")
-        print("2) Discord Member Recon")
-        print("3) ")
-        print("4) ")
-        print("5) ")
-        print("6) ")
-        print("7) ")
-        print("8) ")
-        print("9) ")
-        print("10) ")
-        print("11) ")
-        option = input("> ")
+        print("This page is still under construction")
+        option = input("< ")
 
-        if option == "1":
+        if option == "BACK":
             clear_screen()
-            holehe()
+            Hell()
+
+        elif option == "MAIN":
+            clear_screen()
+            main_menu()
         
-        elif option == "2":
+        else:
+            print("\033[91m Do not stray from the path, try again\033[0m")
+            time.sleep(1)
             clear_screen()
-            discord_member_recon()
+            Monitoring_and_Recon() 
+
+        print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
 
 #######------------------------------------------- Wef ------------------------------------------------------------#########
 def Wef():
@@ -688,17 +704,23 @@ def Wef():
     if option == "1":
         clear_screen()
         os.system("git clone https://github.com/D3Ext/WEF")
-        os.chdir("cd WEF")
+        os.system("cd WEF")
         os.system("sudo bash wef -i wlan0")
 
     elif option == "2":
         clear_screen()
-        os.chdir("cd WEF")
+        os.system("cd WEF")
         os.system("sudo bash wef -i wlan0")
 
     elif option == "3":
         clear_screen()
         main_menu()
+        
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Wef() 
 
 ####### ------------------------------------ Probing and Testing -----------------------------------------------------############
 def Probing():
@@ -710,32 +732,72 @@ def Probing():
             clear_screen()
             Wef()
 
+        elif option == "BACK":
+            clear_screen()
+            Hell()
+
+        elif option == "MAIN":
+            clear_screen()
+            main_menu()
+    
+        else:
+            print("\033[91m Do not stray from the path, try again\033[0m")
+            time.sleep(1)
+            clear_screen()
+            Probing() 
+        
+            print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
+
 #######---------------------------------------- Passwords -----------------------------------------------#######
 
 def passwords():
 
 
     print("This page is still under construction")
-
-    print("1) Go back to Main Menu")
     option = input("< ")
+    
+    if option == "BACK":
+        clear_screen()
+        cracking_and_breaking()
 
-    if option == "1":
+    elif option == "MAIN":
         clear_screen()
         main_menu()
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        passwords() 
+    
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
 
 ######### -----------------------------------------------------Accounts---------------------------------------------------#########
 
 def accounts():
 
     print("This page is still under construction")
-
-    print("1) Go back to Main Menu")
     option = input("< ")
 
-    if option == "1":
+    if option == "BACK":
+        clear_screen()
+        cracking_and_breaking()
+
+    elif option == "MAIN":
         clear_screen()
         main_menu()
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        accounts() 
+
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
 
 ##### -------------------------------------------Cracking and Breaking ---------------------------------------------#####
 def cracking_and_breaking():
@@ -753,7 +815,22 @@ def cracking_and_breaking():
         clear_screen()
         accounts()
 
-  
+    elif option == "BACK":
+        clear_screen()
+        Hell()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        cracking_and_breaking() 
+
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
 
 
 ######## ------------------------------------ HELL BRANCH ----------------------------------------------------------########
@@ -785,6 +862,24 @@ def Hell():
         ascii_cracking_breaking()
         cracking_and_breaking()
 
+    elif option == "BACK":
+        clear_screen()
+        main_menu()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Hell() 
+
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
+
 ##########-------------------------------------------------Dark Web Search Engines---------------------------------------########
 
 def search_engines():
@@ -813,45 +908,65 @@ def search_engines():
     print("---------------------------------------------------------------------------------------------------------")
     
     print(colored('Which Path Do you Choose?' , 'red' , attrs=['reverse' , 'blink' , 'bold']))
-    print("1) Return to Main Menu")
-    print("2) Go to Heaven")
-    print("3) Go to Hell")
-    print("4) Go to Purgatory")
-    print("5) Go Back")
+    print("1) Go to Heaven")
+    print("2) Go to Hell")
+    print("3) Go to Purgatory")
     option = input("> ")
 
     if option == "1":
         clear_screen()
-        main_menu()
+        Heaven()
 
     elif option == "2":
         clear_screen()
-        Heaven()
+        Hell()
 
     elif option == "3":
         clear_screen()
-        Hell()
-
-    elif option == "4":
-        clear_screen()
         Purgatory()
 
-    elif option == "5":
+    elif option == "BACK":
         clear_screen()
         Dark_Websites()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        search_engines() 
+
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
 
 #######--------------------------------------------------------------Dark Web Chatrooms and Forums--------------------------------------########
 
 def chatrooms_forums():
 
     print("This page is still under construction")
-
-    print("1) Go back to Main Menu")
     option = input("< ")
 
-    if option == "1":
+    if option == "BACK":
+        clear_screen()
+        Dark_Websites()
+
+    elif option == "MAIN":
         clear_screen()
         main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        chatrooms_forums() 
+
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
 
     
 
@@ -862,7 +977,7 @@ def directories():
     print('''
           Dark Web Directories
           
-          COpy the link and paste it into the Tor Browser.
+          Copy the link and paste it into the Tor Browser.
           ''')
 
     print("MEGALINKS - http://megaligvlxvyg2qakftplhghbzxatfgawpta5cvafoxfcoxlthofxzid.onion/")
@@ -872,8 +987,25 @@ def directories():
     print("V3 Paste - http://v3pastedc5jeqahtq77gvu3vz222bcqhlfubfunzjzqedg6jdqqlvgqd.onion/index.php")
     print("OnionServices - http://onionserh5njpt6tdnvjj3ttfz7ffo6g5la54d5njl5wkqygkh3wxxyd.onion/")
     print("Wiki Pages - http://uquroyobsaquslaunwkz6bmc3wutpzvwe7mv62xeq64645a57bugnsyd.onion/")
+    option = input("< ")
 
+    if option == "BACK":
+        clear_screen()
+        Dark_Websites()
 
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        directories() 
+
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
 
 #######--------------------------------------------------Dark Websites----------------------------------------------########
 
@@ -897,6 +1029,24 @@ def Dark_Websites():
         clear_screen()
         directories()
 
+    elif option == "BACK":
+        clear_screen()
+        Purgatory()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Dark_Websites() 
+
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
+    
 ######---------------------------------------------- Clear Websites-----------------------------------######
 
 def Clear_Websites():
@@ -904,12 +1054,27 @@ def Clear_Websites():
 
     print("This page is still under construction")
 
-    print("1) Go back to Main Menu")
-    option = input("< ")
+    print("Go Back")
+    print("Go To Main Menu")
+    option = ("> ")
 
-    if option == "1":
+    if option == "BACK":
+        clear_screen()
+        Purgatory()
+
+    elif option == "MAIN":
         clear_screen()
         main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Clear_Websites() 
+
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
 
 #########------------------------------------------Reading Material---------------------------------------########
 
@@ -918,24 +1083,54 @@ def Reading_Material():
 
     print("This page is still under construction")
 
-    print("1) Go back to Main Menu")
-    option = input("< ")
+    print("Go Back")
+    print("Go To Main Menu")
+    option = ("> ")
 
-    if option == "1":
+    if option == "BACK":
+        clear_screen()
+        Purgatory()
+
+    elif option == "MAIN":
         clear_screen()
         main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Reading_Material() 
+
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
 
 #######---------------------------------------------- Clearnet Forums ---------------------------------------------#######
 def Forums():
 
     print("This page is still under construction")
+    
+    print("Go Back")
+    print("Go To Main Menu")
+    option = ("> ")
 
-    print("1) Go back to Main Menu")
-    option = input("< ")
+    if option == "BACK":
+        clear_screen()
+        Purgatory()
 
-    if option == "1":
+    elif option == "MAIN":
         clear_screen()
         main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Forums() 
+
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
 
 
 ####### ---------------------------------------- PURGATORY ---------------------------------------------------------########
@@ -966,6 +1161,23 @@ def Purgatory():
         clear_screen()
         Forums()
 
+    elif option == "BACK":
+        clear_screen()
+        main_menu()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Purgatory() 
+
+    print('''
+                    Type BACK to go back. Type MAIN to go to the main 
+          ''')
 
 ######## ------------------------------------ MAIN MENU ------------------------------------------------------------ ############
 def main_menu():
