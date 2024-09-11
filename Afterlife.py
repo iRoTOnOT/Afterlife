@@ -632,7 +632,51 @@ def Deep_Sound():
         time.sleep(1)
         clear_screen()
         Deep_Sound()     
+
+############----------------------------------------------Subnet Wizard------------------------------------###########
+
+def SubnetWizard():
     
+    print('''
+          Console-based Subnet/supernet calculator. 
+          Simplifies subnetting tasks. 
+          The python commands are for Linux only.
+          ''')
+    print("=============================================")
+    print("1) Install / First Time Use")
+    print("2) Run")
+
+    foot()
+
+    option = input("< ")
+
+   
+
+    if option == "1":
+        clear_screen
+        os.system("git clone https://github.com/naemazam/SubnetWizard.git")
+        SubnetWizard()
+
+    elif option == "2":
+        clear_screen()
+        os.chdir("SubnetWizard")
+        os.system("python3 main.py")
+        SubnetWizard()
+
+    elif option == "BACK":
+        clear_screen()
+        main_menu()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        SubnetWizard()          
+
  
 ####### --------------------------------------- HEAVEN BRANCH ------------------------------------- #######
 def Heaven():
@@ -641,6 +685,7 @@ def Heaven():
 
     print("1) Anonsurf")
     print("2) Deep Sound")
+    print("3) Subnet Wizard")
 
     foot()
 
@@ -653,6 +698,10 @@ def Heaven():
     elif option == "2":
         clear_screen()
         Deep_Sound()
+
+    elif option == "3":
+        clear_screen()
+        SubnetWizard()
 
     elif option == "BACK":
             clear_screen()
@@ -693,60 +742,17 @@ def Monitoring_and_Recon():
             Monitoring_and_Recon() 
 
 
-#######------------------------------------------- Wef ------------------------------------------------------------#########
-def Wef():
-
-    print('''Wef is a multi tool for Wi-Fi attacks. It provides the following.
-          DoS Attacks / WEP Attacks / Evil Twin Attach / WPS Attack / Handshake Attacks
-          
-          After install, configuration for the program will be needed.
-          You will lose internet connection while the application is running.
-          ''')
-
-    print("1) Install / First Time Run")
-    print("2) Run")
-    print("3) Main Menu")
-    
-    foot()
-    
-    option = input("> ")
-    
-    if option == "1":
-        clear_screen()
-        os.system("git clone https://github.com/D3Ext/WEF")
-        os.system("cd WEF")
-        os.system("sudo bash wef -i wlan0")
-
-    elif option == "2":
-        clear_screen()
-        os.system("cd WEF")
-        os.system("sudo bash wef -i wlan0")
-
-    elif option == "3":
-        clear_screen()
-        main_menu()
-        
-    else:
-        print("\033[91m Do not stray from the path, try again\033[0m")
-        time.sleep(1)
-        clear_screen()
-        Wef() 
-
-
 ####### ------------------------------------ Probing and Testing -----------------------------------------------------############
 def Probing():
 
-        print("1) Wef")
+        print("This page is under construction.")
         
         foot()
         
         option = input("> ")
 
-        if option == "1":
-            clear_screen()
-            Wef()
 
-        elif option == "BACK":
+        if option == "BACK":
             clear_screen()
             Hell()
 
@@ -809,6 +815,72 @@ def accounts():
         clear_screen()
         accounts() 
 
+#######------------------------------------------- Wef ------------------------------------------------------------#########
+def Wef():
+
+    print('''Wef is a multi tool for Wi-Fi attacks. It provides the following.
+          DoS Attacks / WEP Attacks / Evil Twin Attach / WPS Attack / Handshake Attacks
+          
+          After install, configuration for the program will be needed.
+          You will lose internet connection while the application is running.
+          ''')
+
+    print("1) Install / First Time Run")
+    print("2) Run")
+    print("3) Main Menu")
+    
+    foot()
+    
+    option = input("> ")
+    
+    if option == "1":
+        clear_screen()
+        os.system("git clone https://github.com/D3Ext/WEF")
+        os.system("cd WEF")
+        os.system("sudo bash wef -i wlan0")
+
+    elif option == "2":
+        clear_screen()
+        os.system("cd WEF")
+        os.system("sudo bash wef -i wlan0")
+
+    elif option == "3":
+        clear_screen()
+        main_menu()
+        
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Wef() 
+
+
+#######-----------------------------------------------WiFi------------------------------------------------------------#########
+
+def WiFi():
+
+    print("1) Wef")
+    option = input("< ")
+
+    foot()
+
+    if option == "1":
+        clear_screen()
+        Wef()
+
+    elif option == "BACK":
+        clear_screen()
+        cracking_and_breaking()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+
 
 ##### -------------------------------------------Cracking and Breaking ---------------------------------------------#####
 def cracking_and_breaking():
@@ -816,6 +888,7 @@ def cracking_and_breaking():
     print("What Are We Cracking Into Today?")
     print("1) Passwords")
     print("2) Accounts")
+    print("3) WiFi")
 
     foot()
 
@@ -828,6 +901,10 @@ def cracking_and_breaking():
     elif option == "2":
         clear_screen()
         accounts()
+
+    elif option == "3":
+        clear_screen()
+        WiFi()
 
     elif option == "BACK":
         clear_screen()
