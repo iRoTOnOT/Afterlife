@@ -476,6 +476,37 @@ def ascii_cracking_breaking():
     ''')
 
 
+########-------------------------------------------------------Cameras--------------------------------------------------------########
+
+def ascii_cameras():
+
+    print('''
+
+              ___             ///////
+             (__|_______--/| /   ///
+            __/  +--+| |-\| (>   )/     ,"-------------
+           |_|ooo+--+|_|    /_    /   ,"  I'm Always    ",
+            `-------'       |_, //  _-"  Watching You! ,"
+                            |___/  <------------------"
+
+
+''')
+
+##########------------------------------------------------Blackbird--------------------------------------########
+
+def ascii_blackbird():
+
+    print(colored('''
+          
+               _.------.
+           _.-`    ('>.-`"""-.
+ '.__.---'`       _'`   _ .--.)
+jgs     -'         '-.-';`   `
+        ' -      _.'  ``'--. 
+            '---`    .-'""`
+                   /`
+
+          ''' , 'red'))
 
 ######## ----------------------------------------------- import list -------------------------------------------------- #######
 from optparse import Option
@@ -593,46 +624,6 @@ def Anonsurf():
         Anonsurf()     
 
 
-######## -------------------------- DEEP SOUND --------------------------------------- ########
-def Deep_Sound():
-    print(colored('Welcome to Deep Sound, please install before using' , 'red'))
-    print('''
-          Deep Sound, is a repo steganography tool and audio converter that hides secret data in the audio files for safe data transfers.
-          This program is a GUI (Graphical User Interface) that is easy to use.
-          ''')
-    print("1) Install")
-    print("2) Run")
-    print("3) Exit / Return to Afterlife")
-
-    foot()
-
-    option = input("> ")
-
-    if option == (1):
-        clear_screen()
-        os.system("sudo git clone https://github.com/Jpinsoft/DeepSound.git")
-        os.system("cd Deep-Sound && ./installer.sh && cd -- && sudo rm-r Deep-Sound")
-    elif option == (2):
-        clear_screen()
-        os.system("sudo DeepSound start")
-    elif option == (3):
-        clear_screen()
-        print(colored('Thanks for covering your files with that angelic voice' , 'red'))
-        main_menu()
- 
-    elif option == "BACK":
-            clear_screen()
-            Heaven()
-
-    elif option == "MAIN":
-            clear_screen()
-            main_menu()
-    else:
-        print("\033[91m Do not stray from the path, try again\033[0m")
-        time.sleep(1)
-        clear_screen()
-        Deep_Sound()     
-
 ############----------------------------------------------Subnet Wizard------------------------------------###########
 
 def SubnetWizard():
@@ -642,7 +633,7 @@ def SubnetWizard():
           Simplifies subnetting tasks. 
           The python commands are for Linux only.
           ''')
-    print("=============================================")
+    print("=====================================================")
     print("1) Install / First Time Use")
     print("2) Run")
 
@@ -684,8 +675,7 @@ def Heaven():
     ascii_heaven_sign()
 
     print("1) Anonsurf")
-    print("2) Deep Sound")
-    print("3) Subnet Wizard")
+    print("2) Subnet Wizard")
 
     foot()
 
@@ -696,10 +686,6 @@ def Heaven():
         Anonsurf()
 
     elif option == "2":
-        clear_screen()
-        Deep_Sound()
-
-    elif option == "3":
         clear_screen()
         SubnetWizard()
 
@@ -716,18 +702,178 @@ def Heaven():
         time.sleep(1)
         clear_screen()
         Heaven()     
+
+##########------------------------------------------------------------Blackbird Email--------------------------------------------------------#############
+
+def Blackbird_Email():
+
+        print('''
+          
+You can choose to run the username and 
+have it exported to PDF or default HTTP
+
+          ''')
+        
+        print("1) Search Email (Default / HTTP)")
+        print("2) Search Email (Export to PDF)")
+
+        foot()
+
+        option = input("< ")
+
+        if option == "1":
+            clear_screen()
+
+
+        elif option == "BACK":
+            clear_screen()
+            Blackbird()
+
+        elif option == "MAIN":
+            clear_screen()
+            main_menu()
     
+        else:
+            print("\033[91m Do not stray from the path, try again\033[0m")
+            time.sleep(1)
+            clear_screen()
+            Blackbird_Email() 
+
+
+#######--------------------------------------------------------------Blackbird Username--------------------------------------------------###########
+
+def Blackbird_Username():
+
+    print('''
+          
+You can choose to run the username and 
+have it exported to PDF or default HTTP
+
+          ''')
+
+    print("1) Search Username (Default / HTTP)")
+    print("2) Search Username (Export to PDF)")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        os.chdir("blackbird")
+        os.system
+
+    elif option == "BACK":
+            clear_screen()
+            Blackbird()
+
+    elif option == "MAIN":
+            clear_screen()
+            main_menu()
+    
+    else:
+            print("\033[91m Do not stray from the path, try again\033[0m")
+            time.sleep(1)
+            clear_screen()
+            Blackbird_Username() 
+
+#########--------------------------------------------------------------Blackbird-----------------------------------------------------#######
+
+def Blackbird():
+
+    ascii_blackbird()
+
+    print('''
+          Blackbird is an OSINT that searches for accounts
+          by username / email across mutli platforms.
+          It will export to PDF, CSV and HTTP
+          
+          ''')
+    print("===================================================")
+    print("")
+    print("1) Install")
+    print("2) Run Username")
+    print("3) Run Email")
+    print("3) exit")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        os.system("git clone https://github.com/p1ngul1n0/blackbird")
+        os.chdir("blackbird")
+        os.system("pip install -r requirements.txt")
+        Blackbird()
+
+    elif option == "2":
+        clear_screen()
+        Blackbird_Username()
+
+    elif option == "3":
+        clear_screen()
+        Blackbird_Email()
+
+    elif option == "BACK":
+            clear_screen()
+            OSINT_Tools()
+
+    elif option == "MAIN":
+            clear_screen()
+            main_menu()
+    
+    else:
+            print("\033[91m Do not stray from the path, try again\033[0m")
+            time.sleep(1)
+            clear_screen()
+            Blackbird() 
+
+
+###########------------------------------------------------------------OSINT Tools--------------------------------------------############
+
+def OSINT_Tools():
+
+    print("1) Blackbird")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        Blackbird()
+
+    elif option == "BACK":
+            clear_screen()
+            Monitoring_and_Recon()
+
+    elif option == "MAIN":
+            clear_screen()
+            main_menu()
+    
+    else:
+            print("\033[91m Do not stray from the path, try again\033[0m")
+            time.sleep(1)
+            clear_screen()
+            OSINT_Tools() 
+    
+
+
     
 ######### -----------------------------------------------Monitoring and Recon List ---------------------------------------######
 def Monitoring_and_Recon():
 
-        print("This page is still under construction")
+        print("1) OSINT Tools")
         
         foot()
         
         option = input("< ")
 
-        if option == "BACK":
+        if option =="1":
+            clear_screen()
+            OSINT_Tools
+        
+        elif option == "BACK":
             clear_screen()
             Hell()
 
@@ -742,17 +888,46 @@ def Monitoring_and_Recon():
             Monitoring_and_Recon() 
 
 
+############-----------------------------------------------------Cameras------------------------------------------------------------##########
+
+def Cameras():
+
+    ascii_cameras()
+
+    print("This page is under construction")
+
+    foot()
+    
+    option = input("< ")
+    
+    if option == "BACK":
+        clear_screen()
+        Probing()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Cameras() 
+
 ####### ------------------------------------ Probing and Testing -----------------------------------------------------############
 def Probing():
 
-        print("This page is under construction.")
+        print("1) Cameras.")
         
         foot()
         
         option = input("> ")
 
 
-        if option == "BACK":
+        if option == "1":
+            clear_screen()
+            Cameras()
+
+        elif option == "BACK":
             clear_screen()
             Hell()
 
