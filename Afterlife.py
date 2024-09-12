@@ -894,6 +894,12 @@ def Blackbird():
 
 def OSINT_Tools():
 
+    print('''
+          Listed are OSINT frameworks for searching
+          open source intelligence gathering.
+          ''')
+    print(" ")
+    print("-------------------------------------------")
     print("1) Blackbird")
 
     foot()
