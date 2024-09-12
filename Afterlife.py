@@ -483,7 +483,7 @@ def ascii_cameras():
     print('''
 
               ___             ///////
-             (__|_______--/| /   ///
+             (__|______--/| /   ////
             __/  +--+| |-\| (>   )/     ,"-------------
            |_|ooo+--+|_|    /_    /   ,"  I'm Always    ",
             `-------'       |_, //  _-"  Watching You! ,"
@@ -508,6 +508,33 @@ jgs     -'         '-.-';`   `
 
           ''' , 'red'))
 
+#######------------------------------------------------dark web crawler---------------------------------------------------------########
+
+def ascii_dark_web_crawler():
+
+    print('''   
+                         ______                     
+     _________        .---"""      """---.              
+    :______.-':      :  .--------------.  :             
+    | ______  |      | :                : |             
+    |:______B:|      | |    Dark Web    | |             
+    |:______B:|      | |     Crawler    | |             
+    |:______B:|      | |  ------------  | |             
+    |         |      | |   What Do You  | |             
+    |:_____:  |      | |  Wish To Find? | |             
+    |    ==   |      | :                : |             
+    |       O |      :  '--------------'  :             
+    |       o |      :'---...______...---'              
+    |       o |-._.-i___/'             \._              
+    |'-.____o_|   '-.   '-...______...-'  `-._          
+    :_________:      `.____________________   `-.___.-. 
+                     .'.eeeeeeeeeeeeeeeeee.'.      :___:
+                   .'.eeeeeeeeeeeeeeeeeeeeee.'.         
+                  :____________________________:
+          ''')
+
+
+
 ######## ----------------------------------------------- import list -------------------------------------------------- #######
 from optparse import Option
 import os
@@ -525,6 +552,7 @@ import requests
 import sys
 import time
 import colorama
+import subprocess
 
 ####### ------------------------------------------ os sysem updates and commands --------------------------------------------------- #######
 def update():
@@ -553,6 +581,13 @@ def menu():
 
     main_menu()
 
+########----------------------------------Change------------------------------------------#######
+
+def change():
+
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(script_dir)
+
 
 #######-----------------------------------Header-------------------------------------------------------------#########
 
@@ -575,6 +610,8 @@ def Anonsurf():
 
     print(colored('Welcome to Anon Surf, please install before running' , 'red'))
     print("Anon surf puts your internet traffic through Tor to allow for more protective web browsing")
+    print("-------------------------------------------------------------------------------------------")
+    print(" ")
     print("1) Install")
     print("2) Run")
     print("3) Stop")
@@ -593,30 +630,38 @@ def Anonsurf():
         os.system("sudo git clone https://github.com/Und3rfl0w/kali-anonsurf.git")
         os.system("cd kali-anonsurf && sudo ./installer.sh && cd -- && sudo rm-r kali-anonsurf")
         Anonsurf()
+
     elif option == "2":
         clear_screen()
         os.system("sudo anonsurf start")
         Anonsurf()
+
     elif option == "3":
         clear_screen()
         os.system("sudo anonsurf stop")
         Anonsurf()
+
     elif option == "4":
         clear_screen()
         os.system("sudo anonsurf status")
         Anonsurf()
+
     elif option == "5":
         clear_screen()
         print(colored('Come back when you ready to surf anonymously!' , 'red'))
         main_menu()
+
     elif option == "BACK":
         clear_screen()
         Heaven()
+
     elif option == "MAIN":
         clear_screen()
         main_menu()
+
     elif option == "EXIT":
         exit()
+
     else:
         print("\033[91m Do not stray from the path, try again\033[0m")
         time.sleep(1)
@@ -639,7 +684,7 @@ def SubnetWizard():
 
     foot()
 
-    option = input("< ")
+    option = input("> ")
 
    
 
@@ -671,6 +716,8 @@ def SubnetWizard():
  
 ####### --------------------------------------- HEAVEN BRANCH ------------------------------------- #######
 def Heaven():
+    change()
+    clear_screen()
     ascii_icarus()
     ascii_heaven_sign()
 
@@ -690,12 +737,12 @@ def Heaven():
         SubnetWizard()
 
     elif option == "BACK":
-            clear_screen()
-            main_menu()
+        clear_screen()
+        main_menu()
 
     elif option == "MAIN":
-            clear_screen()
-            main_menu()
+        clear_screen()
+        main_menu()
 
     else:
         print("\033[91m Do not stray from the path, try again\033[0m")
@@ -719,10 +766,17 @@ have it exported to PDF or default HTTP
 
         foot()
 
-        option = input("< ")
+        option = input("> ")
 
         if option == "1":
             clear_screen()
+            email = input("Enter: ")
+            subprocess.run(["python3" , "blackbird.py" , "--email" , email])
+
+        elif option == "2":
+            clear_screen()
+            email = input("Enter: ")
+            subprocess.run(["python3" , "blackbird.py" , "--email" , email , "--pdf"])
 
 
         elif option == "BACK":
@@ -756,19 +810,26 @@ have it exported to PDF or default HTTP
 
     foot()
 
-    option = input("< ")
+    option = input("> ")
 
     if option == "1":
-        os.chdir("blackbird")
-        os.system
+        clear_screen()
+        username = input("Enter:")
+        subprocess.run(["python3" , "blackbird.py" , "--username" , username])
+
+    elif option == "2":
+        clear_screen()
+        username = input("Enter: ")
+        subprocess.run(["python3" , "blackbird.py" , "--username" , username , "--pdf"])
+        
 
     elif option == "BACK":
-            clear_screen()
-            Blackbird()
+        clear_screen()
+        Blackbird()
 
     elif option == "MAIN":
-            clear_screen()
-            main_menu()
+        clear_screen()
+        main_menu()
     
     else:
             print("\033[91m Do not stray from the path, try again\033[0m")
@@ -779,7 +840,7 @@ have it exported to PDF or default HTTP
 #########--------------------------------------------------------------Blackbird-----------------------------------------------------#######
 
 def Blackbird():
-
+    change()
     ascii_blackbird()
 
     print('''
@@ -797,7 +858,7 @@ def Blackbird():
 
     foot()
 
-    option = input("< ")
+    option = input("> ")
 
     if option == "1":
         clear_screen()
@@ -837,7 +898,7 @@ def OSINT_Tools():
 
     foot()
 
-    option = input("< ")
+    option = input("> ")
 
     if option == "1":
         clear_screen()
@@ -867,7 +928,7 @@ def Monitoring_and_Recon():
         
         foot()
         
-        option = input("< ")
+        option = input("> ")
 
         if option =="1":
             clear_screen()
@@ -898,7 +959,7 @@ def Cameras():
 
     foot()
     
-    option = input("< ")
+    option = input("> ")
     
     if option == "BACK":
         clear_screen()
@@ -951,7 +1012,7 @@ def passwords():
     
     foot()
     
-    option = input("< ")
+    option = input("> ")
     
     if option == "BACK":
         clear_screen()
@@ -975,7 +1036,7 @@ def accounts():
     
     foot()
     
-    option = input("< ")
+    option = input("> ")
 
     if option == "BACK":
         clear_screen()
@@ -1035,7 +1096,7 @@ def Wef():
 def WiFi():
 
     print("1) Wef")
-    option = input("< ")
+    option = input("> ")
 
     foot()
 
@@ -1098,6 +1159,8 @@ def cracking_and_breaking():
 
 ######## ------------------------------------ HELL BRANCH ----------------------------------------------------------########
 def Hell():
+    change()
+    clear_screen()
     ascii_devil()
     ascii_hell_sign()
     
@@ -1108,7 +1171,7 @@ def Hell():
    
     foot()
    
-    option = input("< ")
+    option = input("> ")
 
     if option == "1":
         clear_screen()
@@ -1140,6 +1203,18 @@ def Hell():
         time.sleep(1)
         clear_screen()
         Hell() 
+
+##########-----------------------------------------------------Dark Web Crawlers------------------------------------------########
+
+def Dark_Web_Crawlers():
+
+    ascii_dark_web_crawler()
+
+    print('''
+These are dark web crawlers. Type what you want to search for
+and let them do all the work of compiling URLs.
+        
+            ''')
 
 
 ##########-------------------------------------------------Dark Web Search Engines---------------------------------------########
@@ -1213,7 +1288,7 @@ def chatrooms_forums():
     
     foot()
     
-    option = input("< ")
+    option = input("> ")
 
     if option == "BACK":
         clear_screen()
@@ -1252,7 +1327,7 @@ def directories():
 
     foot()
 
-    option = input("< ")
+    option = input("> ")
 
     if option == "BACK":
         clear_screen()
@@ -1277,6 +1352,7 @@ def Dark_Websites():
     print("1) Search Engines")
     print("2) Chatrooms / Forums")
     print("3) Directories")
+    print("4) Dark Web Crawlers")
 
     foot()
     
@@ -1293,6 +1369,10 @@ def Dark_Websites():
     elif option == "3":
         clear_screen()
         directories()
+
+    elif option == "4":
+        clear_screen()
+        Dark_Web_Crawlers()
 
     elif option == "BACK":
         clear_screen()
@@ -1392,6 +1472,8 @@ def Forums():
 
 ####### ---------------------------------------- PURGATORY ---------------------------------------------------------########
 def Purgatory():
+    change()
+    clear_screen()
     ascii_purgatory()
     ascii_purgatory_sign()
 
@@ -1441,6 +1523,7 @@ def Purgatory():
 
 ######## ------------------------------------ MAIN MENU ------------------------------------------------------------ ############
 def main_menu():
+    change()
     clear_screen()
     ascii_Afterlife()
     ascii_welcome()
