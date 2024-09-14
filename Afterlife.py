@@ -710,7 +710,29 @@ def SubnetWizard():
         clear_screen()
         SubnetWizard()          
 
- 
+########-------------------------------------Email Analyzer---------------------------------------------#############
+
+def Email_Analyzer():
+    change()
+    print("Email Analyzer is a program for analyzing suspicious emails.")
+    print("Make sure the files you want scanned are in the same CD / Directory")
+    print("---------------------------------------------------------------------------------------------------------------")
+    print("1) Install")
+    print("2) Run")
+    
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        os.system("git clone https://github.com/keraattin/EmailAnalyzer.git")
+        os.chdir("EmailAnalyzer")
+        print("Input the email file that you want analyzed")
+        subprocess.run(["python3" , "email-analyzer.py" , "-f" , file])
+        Email_Analyzer()
+
+
 ####### --------------------------------------- HEAVEN BRANCH ------------------------------------- #######
 def Heaven():
     change()
@@ -720,6 +742,7 @@ def Heaven():
 
     print("1) Anonsurf")
     print("2) Subnet Wizard")
+    print("3) Email Analyzer")
 
     foot()
 
@@ -732,6 +755,10 @@ def Heaven():
     elif option == "2":
         clear_screen()
         SubnetWizard()
+
+    elif option == "3":
+        clear_screen()
+        Email_Analyzer()
 
     elif option == "BACK":
         clear_screen()
@@ -769,12 +796,13 @@ have it exported to PDF or default HTTP
             clear_screen()
             email = input("Enter: ")
             subprocess.run(["python3" , "blackbird.py" , "--email" , email])
+            Blackbird_Email()
 
         elif option == "2":
             clear_screen()
             email = input("Enter: ")
             subprocess.run(["python3" , "blackbird.py" , "--email" , email , "--pdf"])
-
+            Blackbird_Email()
 
         elif option == "BACK":
             clear_screen()
@@ -891,12 +919,9 @@ def Blackbird():
 
 def OSINT_Tools():
 
-    print('''
-          Listed are OSINT frameworks for searching
-          open source intelligence gathering.
-          ''')
-    print(" ")
-    print("-------------------------------------------")
+    print("List of OSINT Frameworks For Gathering Information")
+
+    print("-------------------------------------------------------")
     print("1) Blackbird")
 
     foot()
@@ -906,27 +931,31 @@ def OSINT_Tools():
     if option == "1":
         clear_screen()
         Blackbird()
-
-    elif option == "BACK":
-            clear_screen()
-            Monitoring_and_Recon()
+    
+    elif option == "Back":
+        clear_screen()
+        Monitoring_and_Recon()
 
     elif option == "MAIN":
-            clear_screen()
-            main_menu()
-    
+        clear_screen()
+        main_menu()
+
     else:
-            print("\033[91m Do not stray from the path, try again\033[0m")
-            time.sleep(1)
-            clear_screen()
-            OSINT_Tools() 
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        OSINT_Tools()
     
+
 
     
 ######### -----------------------------------------------Monitoring and Recon List ---------------------------------------######
 def Monitoring_and_Recon():
+        
+        change()
 
         print("1) OSINT Tools")
+        print("2) Vehicle Info")
         
         foot()
         
@@ -955,6 +984,8 @@ def Monitoring_and_Recon():
 
 def Cameras():
 
+    change()
+
     ascii_cameras()
 
     print("This page is under construction")
@@ -979,12 +1010,13 @@ def Cameras():
 ####### ------------------------------------ Probing and Testing -----------------------------------------------------############
 def Probing():
 
+        change()
+
         print("1) Cameras.")
         
         foot()
         
         option = input("> ")
-
 
         if option == "1":
             clear_screen()
@@ -1009,6 +1041,7 @@ def Probing():
 
 def passwords():
 
+    change()
 
     print("This page is still under construction")
     
@@ -1034,6 +1067,8 @@ def passwords():
 
 def accounts():
 
+    change()
+
     print("This page is still under construction")
     
     foot()
@@ -1055,6 +1090,8 @@ def accounts():
 
 #######------------------------------------------- Wef ------------------------------------------------------------#########
 def Wef():
+
+    change()
 
     print('''Wef is a multi tool for Wi-Fi attacks. It provides the following.
           DoS Attacks / WEP Attacks / Evil Twin Attach / WPS Attack / Handshake Attacks
@@ -1097,6 +1134,8 @@ def Wef():
 
 def WiFi():
 
+    change()
+
     print("1) Wef")
     option = input("> ")
 
@@ -1122,6 +1161,8 @@ def WiFi():
 #######------------------------------------------------Ducky 2 Python--------------------------------------#######
 
 def Ducky2python():
+
+    change()
 
     print('''
 Ducky 2 Pyhon is a program that will turn your ducky script
@@ -1164,6 +1205,8 @@ Script will be saved as PythonScript.py from the ducky2python.py directory
 
 def Build_A_Ducky():
 
+    change()
+
     print(''' 
     This is the Rubber Ducky Builder. 
     This will be a starting template for a rubber ducky script. 
@@ -1203,6 +1246,7 @@ REM_BLOCK
 #############################
 END_REM  
               ''')
+        Build_A_Ducky()
         
     elif option == "2":
         print('''
@@ -1214,6 +1258,7 @@ CTRL-SHIFT ENTER
 LEFTARROW
 ENTER               
               ''')
+        Build_A_Ducky()
         
     elif option == "3":
         print('''              
@@ -1225,6 +1270,7 @@ CTRL-SHIFT ENTER
 LEFTARROW
 ENTER
               ''')
+        Build_A_Ducky()
 
     elif option == "4":
         print('''
@@ -1271,12 +1317,14 @@ EXTENSION PASSIVE_WINDOWS_DETECT
     END_REM
 END_EXTENSION         
               ''')
+        Build_A_Ducky()
 
     elif option == "5":
         print('''
 REM Clear the command history in PowerShell by deleting the history file
 STRINGLN Remove-Item (Get-PSReadlineOption).HistorySavePath      
               ''')
+        Build_A_Ducky()
 
     elif option == "6":
         print('''
@@ -1284,6 +1332,7 @@ STRINGLN Remove-Item (Get-PSReadlineOption).HistorySavePath
 REM It is assumed that a shell has already been opened...
 STRINGLN rm $HISTFILE; exit
             ''')
+        Build_A_Ducky()
 
     elif option == "7":
         print('''
@@ -1292,87 +1341,26 @@ DELAY 1000
 STRINGLN PowerShell
 DELAY 1000          
               ''')
+        Build_A_Ducky()
 
     elif option == "8":
         print('''
 CTRL-ALT t
 DELAY 1000             
             ''')
+        Build_A_Ducky()
 
     elif option == "9":
         print('''
-EXTENSION SAVE_FILES_IN_RUBBER_DUCKY_STORAGE_WINDOWS
-    REM VERSION 1.0
-    REM AUTHOR: Aleff
-    REM_BLOCK Documentation
-        This extension is used to save one or more files through the USB Rubber Ducky storage.
-
-        TARGET:
-            Windows 10/11
-
-        USAGE:
-            Insert this extension when you have one or more files that you want to save in your USB Rubber Ducky.
-
-        CONFIGURATION:
-            Set #DRIVER_LABEL variable with the correct Label of your USB Rubber Ducky considering that the default value is 'DUCK'.
-
-            Set #FLAG_SINGLE_FILE with TRUE if you want to save just one file.
-            In this case you will need to specify the file path within the #SINGLE_PATH variable OR, in case the exact path to the file you can only acquire it at runtime and so via the powershell, use in the powershell the $fileToSavePath variable to capture this path.
-                i.e. in DuckyScript EXTENSION
-                    DEFINE #SINGLE_PATH C:\Users\Aleff\Downloads\photo.png
-                i.e. in PowerShell before extension
-                    $fileToSavePath = "C:\Users\Aleff\Downloads\photo.png"
-
-            Set #FLAG_SINGLE_FILE FALSE if you want to send multiple files.
-            In this case in the PowerShell you will have to create the variable $fileToSavePaths, which is an array of strings that should contain the list of paths related to the files you want to save.
-                i.e. in PowerShell before extension:
-                    $fileToSavePaths = @(
-                        "C:\Users\Aleff\Downloads\photo.png",
-                        "C:\Users\Aleff\Downloads\document.pdf",
-                        "C:\Users\Aleff\Downloads\song.mp3"
-                    )
-                Some tips:
-                    How to create an Array?
-                        > $fileToSavePaths = @()
-                    How to add an element?
-                        > $fileToSavePaths += "C:\Users\Aleff\Downloads\photo.png"
-                    How to see the array?
-                        > $fileToSavePaths
-    END_REM
-    REM Settings
-    DEFINE #DRIVER_LABEL DUCK
-    DEFINE #FLAG_SINGLE_FILE FALSE
-    DEFINE #SINGLE_PATH 0
-
-    REM Extension Code
-    FUNCTION SAVE_SINGLE_FILE()
-        IF ( #SINGLE_PATH != 0 ) THEN
-            STRINGLN mv #SINGLE_PATH >> ${m}:\
-        ELSE IF ( #SINGLE_PATH == 0 ) THEN
-            STRINGLN mv ${fileToSavePath} >> ${m}:\
-        END_IF
-    END_FUNCTION
-
-    FUNCTION SAVE_MULTIPLE_FILES()
-        STRINGLN
-            foreach ($fileToSavePath in $fileToSavePaths) {
-                mv ${fileToSavePath} >> ${m}:\
-            }
-        END_STRINGLN
-    END_FUNCTION
-
-    STRINGLN $m=(Get-Volume -FileSystemLabel '#DRIVER_LABEL').DriveLetter;
-    IF_DEFINED_TRUE #FLAG_SINGLE_FILE
-        SAVE_SINGLE_FILE()
-    END_IF_DEFINED
-    IF_NOT_DEFINED_TRUE #FLAG_SINGLE_FILE
-        SAVE_MULTIPLE_FILES()
-    END_IF_DEFINED
-END_EXTENSION              
+              
+Code is still being worked out at this time
+              
               ''')
+        Build_A_Ducky()
+
 
     elif option == "10)":
-        pint('''
+        print('''
 REM Ducky Script for Steal Saved WiFi Password
 REM Author - TechChip
 REM https://github.com/techchipnet
@@ -1404,6 +1392,7 @@ DELAY 500
 STRING exit
 ENTER             
             ''')
+        Build_A_Ducky()
 
     elif option == "BACK":
         clear_screen()
@@ -1422,6 +1411,8 @@ ENTER
 
 def Pre_Ducky_Scripts():
 
+    change()
+
     print("This site is still under construction")
 
     foot()
@@ -1431,7 +1422,7 @@ def Pre_Ducky_Scripts():
 
     if option == "BACK":
         clear_screen()
-        Hell()
+        Rubber_Ducky_Main()
 
     elif option == "MAIN":
         clear_screen()
@@ -1440,10 +1431,12 @@ def Pre_Ducky_Scripts():
         print("\033[91m Do not stray from the path, try again\033[0m")
         time.sleep(1)
         clear_screen()
-        cracking_and_breaking() 
+        Build_A_Ducky() 
 
 ##########--------------------------------------Rubber Ducky Script Builder------------------------------------------------#####
 def Rubber_Ducky_Main():
+
+    change()
 
     print('''
   _      _      _
