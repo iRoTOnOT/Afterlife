@@ -552,9 +552,22 @@ import requests
 import sys
 import time
 import colorama
-import subprocess
+import dnstwist
+import re
+import socket
+import signal
+import argparse
+import threading
+import json
+import queue
+import urllib.request
+import urllib.parse
+import gzip
+from io import BytesIO
+from datetime import datetime
 
 ####### ------------------------------------------ os sysem updates and commands --------------------------------------------------- #######
+
 def update():
     os.system("sudo apt-get update")
     os.system("sudo apt full-upgrade")
@@ -606,47 +619,37 @@ def foot():
 def Anonsurf():
 
     print(colored('Welcome to Anon Surf, please install before running' , 'red'))
-    print("Anon surf puts your internet traffic through Tor to allow for more protective web browsing")
+    print("Tor service through a linux terminal")
     print("-------------------------------------------------------------------------------------------")
     print(" ")
     print("1) Install")
     print("2) Run")
-    print("3) Stop")
-    print("4) Status") 
-    print("5) Exit Anon Surf / Return To Afterlife")
+    print("3) Status")
+    print("4) Stop") 
 
     foot()
 
     option = input("> ")
 
-   
-
-
     if option == "1":
         clear_screen()
-        os.system("sudo git clone https://github.com/Und3rfl0w/kali-anonsurf.git")
-        os.system("cd kali-anonsurf && sudo ./installer.sh && cd -- && sudo rm-r kali-anonsurf")
+        os.system("sudo apt install tor")
         Anonsurf()
 
     elif option == "2":
         clear_screen()
-        os.system("sudo anonsurf start")
+        os.system("sudo service tor start")
         Anonsurf()
 
     elif option == "3":
         clear_screen()
-        os.system("sudo anonsurf stop")
+        os.system("sudo service tor status")
         Anonsurf()
 
     elif option == "4":
         clear_screen()
-        os.system("sudo anonsurf status")
+        os.system("sudo service tor stop")
         Anonsurf()
-
-    elif option == "5":
-        clear_screen()
-        print(colored('Come back when you ready to surf anonymously!' , 'red'))
-        main_menu()
 
     elif option == "BACK":
         clear_screen()
@@ -698,7 +701,7 @@ def SubnetWizard():
 
     elif option == "BACK":
         clear_screen()
-        main_menu()
+        Heaven()
 
     elif option == "MAIN":
         clear_screen()
@@ -727,11 +730,70 @@ def Email_Analyzer():
     if option == "1":
         clear_screen()
         os.system("git clone https://github.com/keraattin/EmailAnalyzer.git")
-        os.chdir("EmailAnalyzer")
-        print("Input the email file that you want analyzed")
-        subprocess.run(["python3" , "email-analyzer.py" , "-f" , file])
         Email_Analyzer()
 
+    if option == "2":
+        clear_screen()
+        os.chdir("EmailAnalyzer")
+        email = input("Enter Email File: ")
+        subprocess.run("python3" , "email-analyzer.py" , "-f" , email)
+
+    elif option == "BACK":
+        clear_screen()
+        Heaven()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Email_Analyzer()   
+
+#########-------------------------------------------DNS Twist---------------------------------------------#########
+
+def DNSTwist():
+    change()
+
+    print("DNS Twist is a scanner for malicious DNS Fuzzing. Uncovered malicious Domains.")
+    print("THIS INSTALL IS FOR LINUX ONLY")
+    print("------------------------------------------------------------------------------------------")
+    print(" ")
+    print("1) Install")
+    print("2) Run Registered Scan")
+
+    print
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        os.system("sudo apt install dnstwist")
+        DNSTwist()
+
+    elif option == "2":
+        clear_screen()
+        domain = input("Enter Domain URL: ")
+        subprocess.run("dnstwist" , "--registered" , domain)
+        DNSTwist()
+    
+    elif option == "BACK":
+        clear_screen()
+        Heaven()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        DNSTwist()   
 
 ####### --------------------------------------- HEAVEN BRANCH ------------------------------------- #######
 def Heaven():
@@ -743,6 +805,7 @@ def Heaven():
     print("1) Anonsurf")
     print("2) Subnet Wizard")
     print("3) Email Analyzer")
+    print("4) DNSTwist")
 
     foot()
 
@@ -759,6 +822,10 @@ def Heaven():
     elif option == "3":
         clear_screen()
         Email_Analyzer()
+
+    elif option == "4":
+        clear_screen()
+        DNSTwist()
 
     elif option == "BACK":
         clear_screen()
@@ -841,11 +908,13 @@ have it exported to PDF or default HTTP
         clear_screen()
         username = input("Enter:")
         subprocess.run(["python3" , "blackbird.py" , "--username" , username])
+        Blackbird_Username()
 
     elif option == "2":
         clear_screen()
         username = input("Enter: ")
         subprocess.run(["python3" , "blackbird.py" , "--username" , username , "--pdf"])
+        Blackbird_Username()
         
 
     elif option == "BACK":
@@ -978,7 +1047,76 @@ def Monitoring_and_Recon():
             time.sleep(1)
             clear_screen()
             Monitoring_and_Recon() 
+###########---------------------------------------------Dirhunt------------------------------------------------------#######
 
+def Dirhunt():
+
+    print("Directory hunter that detects directories with false 404 errors. Scans for epty file index directories that have been created to hide things and more")
+    print("--------------------------------------------------------------------------------------------------------------------------------------------------------")
+    print(" ")
+    print("1) Install")
+    print("2) Run")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        os.system("sudo pip3 install dirhunt")
+        Dirhunt()
+
+    elif option == "2":
+        clear_screen()
+        url = input("Enter URL: ")
+        subprocess.run("dirhunt" , url)
+        Dirhunt()
+    
+    elif option == "BACK":
+        clear_screen()
+        Web_Scanner()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Dirhunt()         
+
+
+#########---------------------------------------------Web Scanner-----------------------------------------------########
+
+def Web_Scanner():
+    change()
+    print("These are a series of web scanners that recover info from URL's for ")
+    print("-------------------------------------------------------------------------")
+    print(" ")
+    print("1) Dirhunt")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        Dirhunt()
+
+    elif option == "BACK":
+        clear_screen()
+        Web_Scanner()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Web_Scanner()  
 
 ############-----------------------------------------------------Cameras------------------------------------------------------------##########
 
@@ -1013,6 +1151,7 @@ def Probing():
         change()
 
         print("1) Cameras.")
+        print("2) Web Scanner")
         
         foot()
         
@@ -1021,6 +1160,10 @@ def Probing():
         if option == "1":
             clear_screen()
             Cameras()
+
+        elif option == "2":
+            clear_screen()
+            Web_Scanner()
 
         elif option == "BACK":
             clear_screen()
@@ -1583,6 +1726,33 @@ def Hell():
         clear_screen()
         Hell() 
 
+#########----------------------------------------------------Deep Search--------------------------------------------------##########
+
+def Deep_Search():
+
+    change()
+    print("Deep search is a Dark Web crawler that will scrape URL's related to what you look for")
+    print("-----------------------------------------------------------------------------------------")
+    print(" ")
+    print("1) Install")
+    print("2) Run")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        os.system("git clone https://github.com/Thr0wAway-n0w/Deep.git")
+        Deep_Search()
+    
+    elif option == "2":
+        clear_screen()
+        os.chdir("Deep")
+        os.system("python3 Dark.py")
+
+
+
 ##########-----------------------------------------------------Dark Web Crawlers------------------------------------------########
 
 def Dark_Web_Crawlers():
@@ -1597,6 +1767,13 @@ and let them do all the work of compiling URLs.
     print(" ")
     print("1) Deep Search")
 
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        Deep_Search()
 
 
 ##########-------------------------------------------------Dark Web Search Engines---------------------------------------########
