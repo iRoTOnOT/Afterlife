@@ -8,29 +8,33 @@ Afterlife is primarily python driven program containing 3 set paths
 This program is still being written so please be patient. 
 
 # 1. Heaven - Defenses programs to assist with hiding and protecting yourself
-   ## - Anonsurf
-   ## - Subnet Wizard
-   ## - Email Analyzer
+##       - Anonsurf / Tor terminal
+##       - Subnet Wizard
+##       - Email Analyzer
+##       - DNS Twist
 # 2. Hell - Offense for pen-testing and probing practices
-  ## - Monitoring and Recon
-   ###  * OSINT Tools
-###        - Blackbird
-#   - Probing and Testing
-##        * Cameras
-#   - Cracking and Breaking
-##        * Passwords
-##        * Accounts
-##        * Wifi
-###             - Wef
-##        * Rubber Ducky Scripts / Builder
-###             - Prebuilt Scripts
-###             - Ducky Script Builder
+##       - Monitoring and Recon
+###           * OSINT Tools
+###           * Blackbird
+#         - Probing and Testing
+##            * Cameras
+##            * Web Scanner
+###                 - Dirhunt
+#         - Cracking and Breaking
+##           * Passwords
+##           * Accounts
+##           * Wifi
+###                - Wef
+##           * Rubber Ducky Scripts / Builder
+###                - Prebuilt Scripts
+###                - Ducky Script Builder
 # 3. Purgatory - Resources of reading material and sites to assist with research and exploration
-##        * Dark Websites
-###               - Search Engines
-###               - Chatrooms / Forums
-###               - Directories
-###               - Dark Web Crawlers
-##        * Clear Websites
-##        * Reading Material
-##        * Forums
+##           * Dark Websites
+###                  - Search Engines
+###                  - Chatrooms / Forums
+###                  - Directories
+###                  - Dark Web Crawlers
+###                        * Deep Search / Dark Search (Compiled code of multiple dark web crawlers
+##           * Clear Websites
+##           * Reading Material
+##           * Forums  
