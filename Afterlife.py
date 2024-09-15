@@ -1053,7 +1053,6 @@ def Monitoring_and_Recon():
         change()
 
         print("1) OSINT Tools")
-        print("2) Vehicle Info")
         
         foot()
         
@@ -1093,12 +1092,13 @@ def Dirhunt():
 
     if option == "1":
         clear_screen()
-        os.system("pip3 install dirhunt")
+        os.system("git clone https://github.com/Nekmo/dirhunt.git")
+        os.chdir(dirhunt)
         Dirhunt()
 
     elif option == "2":
         clear_screen()
-        print("Input the URL as __________")
+        print("Input the URL as http://website.com/")
         url = input("Enter URL: ")
         subprocess.run("dirhunt" , url)
         Dirhunt()
@@ -1946,11 +1946,82 @@ def Deep_Search():
         os.chdir("Deep")
         os.system("python3 Dark.py")
 
+    elif option == "BACK":
+        clear_screen()
+        Dark_Web_Crawlers()
 
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        search_engines() 
+
+#######----------------------------------------------------------DepthSearch----------------------------------------------------#######
+
+def DepthSearch():
+
+    change()
+
+    print("Depth search is a powerful OSINT tool designed for conducting deep web searches")
+    print(r'''
+Features the following
+        
+    - Deep Web Search: Query deep web search engines and retrieve results with URLs and titles.
+    
+    - Proxy Support: Optional proxy rotation to improve anonymity and circumvent access restrictions.
+    
+    - System Information: Displays detailed information about the operating system, memory, CPU frequency, and number of cores.
+    
+    - Human-like Behavior: Implements random delays between requests to mimic human interaction and reduce detection risk.
+    
+    - User-Friendly: Interactive command-line interface for easy input of search queries and configurations.
+
+
+''')
+
+    print("1) Install")
+    print("2) Run")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        os.system("git clone https://github.com/AnonCatalyst/DepthSearch")
+        os.chdir("DepthSearch")
+        os.system("pip3 install -r requirements.txt --break-system-packages")
+        DepthSearch()
+
+    elif option == "2":
+        clear_screen()
+        os.chdir("DepthSearch")
+        os.system("python3 depthsearch.py")
+        DepthSearch()
+
+    elif option == "BACK":
+        clear_screen()
+        Dark_Websites()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        search_engines()     
 
 ##########-----------------------------------------------------Dark Web Crawlers------------------------------------------########
 
 def Dark_Web_Crawlers():
+
+    change()
 
     ascii_dark_web_crawler()
 
@@ -1961,6 +2032,7 @@ and let them do all the work of compiling URLs.
     print("---------------------------------------------------------------------")
     print(" ")
     print("1) Deep Search")
+    print("2) DepthSearch")
 
     foot()
 
@@ -1969,6 +2041,24 @@ and let them do all the work of compiling URLs.
     if option == "1":
         clear_screen()
         Deep_Search()
+
+    elif option == "2":
+        clear_screen()
+        DepthSearch()
+
+    elif option == "BACK":
+        clear_screen()
+        Dark_Websites()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        search_engines() 
 
 
 ##########-------------------------------------------------Dark Web Search Engines---------------------------------------########
