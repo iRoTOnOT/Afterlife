@@ -54,3 +54,5 @@ This program is still being written so please be patient.
            * Clear Websites
            * Reading Material
            * Forums  
+
+### Special thanks to all the creators that are in this repo directory. 
