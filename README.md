@@ -77,3 +77,7 @@ Special thanks to all the creators that are in this repo directory.
               * https://github.com/Yashvendra/AutoXploit.git
        - Villain - Created by t3l3machus
               * https://github.com/t3l3machus/Villain.git
+       - DepthSearch - Created b AnonCatalyst
+              * https://github.com/AnonCatalyst/DepthSearch.git
+       - Deep - created by Th0wAway-n0w
+              * https://github.com/Thr0wAway-n0w/Deep.git
