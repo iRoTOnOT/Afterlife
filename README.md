@@ -55,4 +55,24 @@ This program is still being written so please be patient.
            * Reading Material
            * Forums  
 
-### Special thanks to all the creators that are in this repo directory. 
+Special thanks to all the creators that are in this repo directory. 
+       - Subnet Wizard - Created by naemazam
+              * https://github.com/naemazam/SubnetWizard.git
+       - Email Analyzer - Created by keraattin
+              * https://github.com/keraattin/EmailAnalyzer.git
+       - dnstwist - Created by elceef
+              * https://github.com/elceef/dnstwist.git
+       - blackbird - Created by AnonCatalyst
+              * https://github.com/AnonCatalyst/blackbird.git
+       - Photon - Created by s0md3v
+              * https://github.com/s0md3v/Photon.git
+       - dirhunt - Created by Neko
+              * https://github.com/Nekmo/dirhunt.git
+       - WEF - Created by D3Ext
+              * https://github.com/D3Ext/WEF.git
+       - DuckyScriptCookbook - Created by aleff-github
+              * https://github.com/aleff-github/DuckyScriptCookbook.git
+       - AutoXploit - Created by Yashvendra
+              * https://github.com/Yashvendra/AutoXploit.git
+       - Villain - Created by t3l3machus
+              * https://github.com/t3l3machus/Villain.git
