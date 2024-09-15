@@ -732,12 +732,13 @@ def Email_Analyzer():
         os.system("git clone https://github.com/keraattin/EmailAnalyzer.git")
         Email_Analyzer()
 
-    if option == "2":
+    elif option == "2":
         clear_screen()
         os.chdir("EmailAnalyzer")
         email = input("Enter Email File: ")
         subprocess.run("python3" , "email-analyzer.py" , "-f" , email)
-
+        Email_Analyzer()
+    
     elif option == "BACK":
         clear_screen()
         Heaven()
@@ -866,7 +867,7 @@ have it exported to PDF or default HTTP
             Blackbird_Email()
 
         elif option == "2":
-            clear_screen()
+            os.chdir("blackbird")
             email = input("Enter: ")
             subprocess.run(["python3" , "blackbird.py" , "--email" , email , "--pdf"])
             Blackbird_Email()
@@ -911,12 +912,11 @@ have it exported to PDF or default HTTP
         Blackbird_Username()
 
     elif option == "2":
-        clear_screen()
+        os.chdir("blackbird")
         username = input("Enter: ")
         subprocess.run(["python3" , "blackbird.py" , "--username" , username , "--pdf"])
         Blackbird_Username()
         
-
     elif option == "BACK":
         clear_screen()
         Blackbird()
@@ -983,15 +983,40 @@ def Blackbird():
             clear_screen()
             Blackbird() 
 
+######-------------------------------------------------------------------Photon-----------------------------------------------#############
+
+def Photon():
+
+    change()
+
+    print("Photon is a data crawler that can look for mutliple different types of information.")
+    print("----------------------------------------------------------------------------------------------")
+    print(" ")
+    print("1) Install")
+    print("2) Run")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        os.system("git clone https://github.com/s0md3v/Photon.git")
+        os.chdir("Photon")
+        os.system("docker build -t photon")
+        os.system("docker run -it --name photon photon:latest -u google,co")
+
 
 ###########------------------------------------------------------------OSINT Tools--------------------------------------------############
 
 def OSINT_Tools():
 
-    print("List of OSINT Frameworks For Gathering Information")
+    change()
 
+    print("List of OSINT Frameworks For Gathering Information")
     print("-------------------------------------------------------")
     print("1) Blackbird")
+    print("2) Photon")
 
     foot()
 
@@ -1000,6 +1025,10 @@ def OSINT_Tools():
     if option == "1":
         clear_screen()
         Blackbird()
+
+    elif option == "2":
+        clear_screen()
+        Photon()
     
     elif option == "Back":
         clear_screen()
@@ -1052,6 +1081,7 @@ def Monitoring_and_Recon():
 def Dirhunt():
 
     print("Directory hunter that detects directories with false 404 errors. Scans for epty file index directories that have been created to hide things and more")
+    print(colored('This is not working properly, please be patient' , 'red'))
     print("--------------------------------------------------------------------------------------------------------------------------------------------------------")
     print(" ")
     print("1) Install")
@@ -1063,11 +1093,12 @@ def Dirhunt():
 
     if option == "1":
         clear_screen()
-        os.system("sudo pip3 install dirhunt")
+        os.system("pip3 install dirhunt")
         Dirhunt()
 
     elif option == "2":
         clear_screen()
+        print("Input the URL as __________")
         url = input("Enter URL: ")
         subprocess.run("dirhunt" , url)
         Dirhunt()
@@ -1359,7 +1390,7 @@ def Build_A_Ducky():
     print("---------------------------------------------------------------------------------------------------")
     print(" ")
     print("1) Payload Intro")
-    print("2) Disable Windows")
+    print("2) Disable Windows Defender")
     print("3) Turn Defender On")
     print("4) Passive Windows Detect")
     print("5) Erase Traces Powershell")
@@ -1494,7 +1525,7 @@ DELAY 1000
         Build_A_Ducky()
 
     elif option == "9":
-        print('''
+        print(r''' 
               
 EXTENSION SAVE_FILES_IN_RUBBER_DUCKY_STORAGE_WINDOWS
     REM VERSION 1.0
@@ -1700,6 +1731,93 @@ def Rubber_Ducky_Main():
         clear_screen()
         cracking_and_breaking() 
 
+######-----------------------------------------------AutoXploit------------------------------------------------------######
+
+def AutoXploit():
+    change()
+
+    print("AutoXploit is an auto payload generator and exploiter for Windows, Android and Linux")
+    print("----------------------------------------------------------------------------")
+    print(" ")
+    print("1) Install")
+    print("2) Run")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        os.system("git clone https://github.com/Yashvendra/AutoXploit.git")
+        os.chdir("AutoXploit")
+        os.system("chmod +x install.sh")
+        os.system("sudo ./install.sh")
+        AutoXploit()
+
+    if option == "2":
+        clear_screen()
+        os.chdir("AutoXploit")
+        os.system("sudo autoxploit")
+        AutoXploit()
+
+    elif option == "BACK":
+        clear_screen()
+        Hell()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        cracking_and_breaking() 
+
+########---------------------------------------------Villain------------------------------------------------------------#########
+
+def Villain():
+
+    change()
+
+    print("Using this tool against hosts that you do not have explicit permission to test is illegal. You are responsible for any trouble you may cause by using this tool.")
+    print(colored('THIS IS FOR KALI LINUX ONLY' , 'red'))
+    print("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+    print(" ")
+    print("1) Install")
+    print("2) Run")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        os.system("git clone https://github.com/t3l3machus.Villain")
+        os.chdir("./Villain")
+        os.system("pip3 install -r requirements.txt")
+        os.system("sudo apt install gnome-terminal")
+        Villain()
+
+    elif option == "2":
+        clear_screen()
+        os.chdir("./Villain")
+        os.system("python3 Villain.py")
+        Villain()
+
+    elif option == "BACK":
+        clear_screen()
+        Hell()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        cracking_and_breaking() 
+
+
 ##### -------------------------------------------Cracking and Breaking ---------------------------------------------#####
 def cracking_and_breaking():
     
@@ -1710,6 +1828,8 @@ def cracking_and_breaking():
     print("2) Accounts")
     print("3) WiFi")
     print("4) Rubber Ducky Script Builder")
+    print("5) AutoXploit")
+    print("6) Villain")
 
     foot()
 
@@ -1730,6 +1850,14 @@ def cracking_and_breaking():
     elif option == "4":
         clear_screen()
         Rubber_Ducky_Main()
+
+    elif option == "5":
+        clear_screen()
+        AutoXploit()
+
+    elif option == "6":
+        clear_screen()
+        Villain()
 
     elif option == "BACK":
         clear_screen()
@@ -2070,14 +2198,14 @@ def Reading_Material():
 
 
 
-#######---------------------------------------------- Clearnet Forums ---------------------------------------------#######
+#######---------------------------------------------- Forums ---------------------------------------------#######
 def Forums():
 
     print("This page is still under construction")
-    
+
     foot()
-    
-    option = ("> ")
+
+    option = input("<")
 
     if option == "BACK":
         clear_screen()
@@ -2169,7 +2297,8 @@ def main_menu():
     print("1) Heaven")
     print("2) Hell")
     print("3) Purgatory")
-    print(colored('4) Return To the Living' , 'red'))
+    print("4) Update and Upgrade system")
+    print(colored('5) Return To the Living' , 'red'))
     option = input("> ")
 
     if option == "1":
@@ -2185,7 +2314,14 @@ def main_menu():
         ascii_purgatory()
         ascii_purgatory_sign()
         Purgatory()
-    elif option =="4":
+
+    elif option == "4":
+        clear_screen()
+        os.system("sudo apt update")
+        os.system("sudo apt full-upgrade -y")
+        main_menu()
+
+    elif option =="5":
         clear_screen()
         exit()
     else:
