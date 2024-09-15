@@ -3,9 +3,16 @@
 
 ## This code is stil being written and is in the primary stages of development
 
+## Installation
+       git clone https://github.com/iRoTOnOT/Afterlife.git
+       cd Afterlife
+       python3 Afterlife.py
+
 Afterlife is primarily python driven program containing 3 set paths 
 
 This program is still being written so please be patient. 
+
+## Below is the directory of the program
 
 ### 1. Heaven - Defenses programs to assist with hiding and protecting yourself
        - Anonsurf / Tor terminal
