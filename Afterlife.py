@@ -1757,7 +1757,7 @@ def AutoXploit():
     if option == "2":
         clear_screen()
         os.chdir("AutoXploit")
-        os.system("sudo autoxploit")
+        os.system("sudo ./autoxploit.sh")
         AutoXploit()
 
     elif option == "BACK":
