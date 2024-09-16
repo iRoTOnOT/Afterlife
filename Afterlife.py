@@ -796,6 +796,113 @@ def DNSTwist():
         clear_screen()
         DNSTwist()   
 
+#######------------------------------------------------------AnonGT------------------------------------------#########
+
+def AnonGT():
+    change()
+
+    print("AnonGT is an advanced AnonSurf that includes mutliple different types of IP changing techniques")
+    print("-------------------------------------------------------------------------------------------------")
+    print(" ")
+    print("1) Install")
+    print("2) Run")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        os.system("git clone https://github.com/gt0day/AnonGT.git")
+        os.chdir("AnonGT")
+        os.system("sudo chmod +x install.py")
+        os.system("sudo python3 ./install.py install")
+        AnonGT()
+
+    elif option == "2":
+        clear_screen()
+        os.system("sudo python3 AnonGT.py")
+        choice = input("Select Option: ")
+        if option == "start":
+            os.system("sudo python3 AnonGT.py start")
+            AnonGT()
+        if option == "start+":
+            os.system("sudo python3 AnonGT.py start+")
+            AnonGT()
+        if option == "stop":
+            os.system("sudo python3 AnonGT.py stop")
+            AnonGT()
+        if option == "status":
+            os.system("sudo python3 AnonGT.py status")
+            AnonGT()
+        if option == "myip":
+            os.system("sudo python3 AnonGT.py myip")
+            time.sleep(5)
+            AnonGT()
+        if option == "chngid":
+            os.system("sudo python3 AnonGT.py chngid")
+            AnonGT()
+        if option == "autochng":
+            os.system("sudo python3 AnonGT.py autochng")
+            AnonGT()
+        if option == "antimitm":
+            os.system("sudo python3 AnonGT.py antimitm")
+            AnonGT()
+        if option == "chngmac":
+            os.system("sudo python3 AnonGT.py chngmac")
+            AnonGT()
+        if option == "rvmac":
+            os.system("sudo python3 AnonGT.py rvmac")
+            AnonGT()
+        if option == "oniongen":
+            os.system("sudo python3 AnonGT.py oniongen")
+            AnonGT()
+        if option == "checko":
+            os.system("sudo python3 AnonGT.py checko")
+            AnonGT()
+        if option == "share":
+            os.system("sudo python3 AnonGT.py share")
+            AnonGT()
+        if option == "receive":
+            os.system("sudo python3 AnonGT.py receive")
+            AnonGT()
+        if option == "chat":
+            os.system("sudo python3 AnonGT.py chat")
+            AnonGT()
+        if option == "website":
+            os.system("sudo python3 AnonGT.py website")
+            AnonGT()
+        if option == "wipe":
+            os.system("sudo python3 AnonGT.py wipe")
+            AnonGT()
+        if option == "fix":
+            os.system("sudo python3 AnonGT.py fix")
+            AnonGT()
+        if option == "checku":
+            os.system("sudo python3 AnonGT.py checku")
+            AnonGT()
+        if option == "about":
+            os.system("sudo python3 AnonGT.py about")
+            AnonGT()
+        if option == "start":
+            os.system("sudo python3 AnonGT.py start")
+            AnonGT()
+
+    elif option == "BACK":
+        clear_screen()
+        Heaven()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        AnonGT()  
+
+
 ####### --------------------------------------- HEAVEN BRANCH ------------------------------------- #######
 def Heaven():
     change()
@@ -807,6 +914,7 @@ def Heaven():
     print("2) Subnet Wizard")
     print("3) Email Analyzer")
     print("4) DNSTwist")
+    print("5) AnonGT /// More advanced Anonsurf")
 
     foot()
 
@@ -827,6 +935,10 @@ def Heaven():
     elif option == "4":
         clear_screen()
         DNSTwist()
+
+    elif option == "5":
+        clear_screen()
+        AnonGT()
 
     elif option == "BACK":
         clear_screen()
@@ -988,7 +1100,7 @@ def Blackbird():
 def Photon():
 
     change()
-
+    print(colored('This is a work in progress' , 'red'))
     print("Photon is a data crawler that can look for mutliple different types of information.")
     print("----------------------------------------------------------------------------------------------")
     print(" ")
@@ -1004,7 +1116,26 @@ def Photon():
         os.system("git clone https://github.com/s0md3v/Photon.git")
         os.chdir("Photon")
         os.system("docker build -t photon")
-        os.system("docker run -it --name photon photon:latest -u google,co")
+        Photon()
+
+    elif option == "2":
+        clear_screen()
+        os.chdir("Photon")
+        subprocess.run("")
+
+    elif option == "BACK":
+        clear_screen()
+        Monitoring_and_Recon()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        OSINT_Tools()
 
 
 ###########------------------------------------------------------------OSINT Tools--------------------------------------------############
@@ -1092,8 +1223,7 @@ def Dirhunt():
 
     if option == "1":
         clear_screen()
-        os.system("git clone https://github.com/Nekmo/dirhunt.git")
-        os.chdir(dirhunt)
+        os.system("pip3 install dnstwist")
         Dirhunt()
 
     elif option == "2":
@@ -1781,6 +1911,7 @@ def Villain():
 
     print("Using this tool against hosts that you do not have explicit permission to test is illegal. You are responsible for any trouble you may cause by using this tool.")
     print(colored('THIS IS FOR KALI LINUX ONLY' , 'red'))
+    print(colored('Villain will connect to your system in multiple ways without any approval. Read the github for further information before using. TURN OFF SSH ON YOUR COMPUTER BEFORE USE' , 'red' , attrs=['reverse' , 'blink' , 'bold']))
     print("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
     print(" ")
     print("1) Install")
@@ -1792,7 +1923,7 @@ def Villain():
 
     if option == "1":
         clear_screen()
-        os.system("git clone https://github.com/t3l3machus.Villain")
+        os.system("git clone https://github.com/t3l3machus/Villain")
         os.chdir("./Villain")
         os.system("pip3 install -r requirements.txt")
         os.system("sudo apt install gnome-terminal")
@@ -2295,7 +2426,7 @@ def Forums():
 
     foot()
 
-    option = input("<")
+    option = input("< ")
 
     if option == "BACK":
         clear_screen()
