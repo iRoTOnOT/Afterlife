@@ -1,4 +1,3 @@
-8
 ### This program is for educational purposes only. Use in a responsible discretion.
 
 ### This code is stil being written and is in the primary stages of development
