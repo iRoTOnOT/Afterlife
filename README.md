@@ -20,7 +20,8 @@ This program is still being written so please be patient.
        - Anonsurf / Tor terminal
        - Subnet Wizard
        - Email Analyzer
-       - DNS Twist - work in progress
+       - DNS Twist
+       - AnonGT - Advanced Anonsurf / Tor Terminal
 
        
 ### 2. Hell - Offense for pen-testing and probing practices
@@ -55,8 +56,9 @@ This program is still being written so please be patient.
            * Reading Material
            * Forums  
 
-Special thanks to all the creators that are in this repo directory. 
-      
+### Special thanks to all the creators that are in this repo directory. 
+       - AnonGT- Created by gt0day
+              * https://github.com/gt0day/AnonGT.git
        - Subnet Wizard - Created by naemazam
               * https://github.com/naemazam/SubnetWizard.git
        - Email Analyzer - Created by keraattin
