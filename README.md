@@ -1,4 +1,4 @@
-
+8
 ### This program is for educational purposes only. Use in a responsible discretion.
 
 ### This code is stil being written and is in the primary stages of development
@@ -80,4 +80,4 @@ Special thanks to all the creators that are in this repo directory.
        - DepthSearch - Created b AnonCatalyst
               * https://github.com/AnonCatalyst/DepthSearch.git
        - Deep - created by Th0wAway-n0w
-              * https://github.com/Thr0wAway-n0w/Deep.git
+              * https://github.com/Dongle/Deep.git
