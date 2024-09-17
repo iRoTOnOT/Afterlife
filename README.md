@@ -92,5 +92,5 @@ https://github.com/t3l3machus/Villain.git
 -----------  DepthSearch - Created b AnonCatalyst
 https://github.com/AnonCatalyst/DepthSearch.git
 
------------  Deep - created by Th0wAway-n0w
+-----------  Deep - created by Dongle
 https://github.com/Dongle/Deep.git
