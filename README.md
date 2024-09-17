@@ -93,4 +93,4 @@ https://github.com/t3l3machus/Villain.git
 https://github.com/AnonCatalyst/DepthSearch.git
 
 -----------  Deep - created by Dongle
-https://github.com/Dongle/Deep.git
+https://github.com/Thr0wAway-n0w/Deep.git
