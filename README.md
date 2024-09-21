@@ -45,12 +45,14 @@ This program is still being written so please be patient.
 
                      
 ### 3. Purgatory - Resources of reading material and sites to assist with research and exploration
-           * Dark Websites
+           * Darkweb
                   - Search Engines
                   - Chatrooms / Forums
                   - Directories
                   - Dark Web Crawlers
                         * Deep Search / Dark Search (Compiled code of multiple dark web crawlers
+                  - Dark Websites
+                         * Fuck Facebook
            * Clear Websites
            * Reading Material
            * Forums  
