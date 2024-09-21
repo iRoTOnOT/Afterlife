@@ -459,7 +459,6 @@ def ascii_cracking_breaking():
 ▐░▌       ▐░▌▐░▌     ▐░▐░▌▐░█▄▄▄▄▄▄▄█░▌            | |HHHHH| |                                       
 ▐░▌       ▐░▌▐░▌      ▐░░▌▐░░░░░░░░░░▌           -'`-._____.-'`-                                        
  ▀         ▀  ▀        ▀▀  ▀▀▀▀▀▀▀▀▀▀                                                              
-                                                                                                                              
  ▄▄▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄    ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄        ▄  ▄▄▄▄▄▄▄▄▄▄▄ 
 ▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌  ▐░▌▐░░░░░░░░░░░▌▐░░▌      ▐░▌▐░░░░░░░░░░░▌
 ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░▌ ▐░▌  ▀▀▀▀█░█▀▀▀▀ ▐░▌░▌     ▐░▌▐░█▀▀▀▀▀▀▀▀▀ 
@@ -2318,6 +2317,29 @@ def directories():
         clear_screen()
         directories() 
 
+#######---------------------------------------------------Websites on Darkweb-----------------------------------------------------------#########
+
+def Websites_Dark():
+
+    print("These are websites on the Tor network that")
+
+    print("1) Fuck Facebook --- 4wbwa6vcpvcr3vvf4qkhppgy56urmjcj2vagu2iqgp3z656xcmfdbiqd.onion")
+
+    foot()
+
+    if option == "BACK":
+        clear_screen()
+        Dark_Websites()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        Websites_Dark() 
 
 #######--------------------------------------------------Dark Websites----------------------------------------------########
 
@@ -2328,6 +2350,7 @@ def Dark_Websites():
     print("2) Chatrooms / Forums")
     print("3) Directories")
     print("4) Dark Web Crawlers")
+    print("5) Websites")
 
     foot()
     
@@ -2348,6 +2371,10 @@ def Dark_Websites():
     elif option == "4":
         clear_screen()
         Dark_Web_Crawlers()
+
+    elif option == "5":
+        clear_screen()
+        Websites_Dark()
 
     elif option == "BACK":
         clear_screen()
