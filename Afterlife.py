@@ -801,6 +801,7 @@ def AnonGT():
     change()
 
     print("AnonGT is an advanced AnonSurf that includes mutliple different types of IP changing techniques")
+    print("AnonGT is currently not working at this time - 09/22/2024")
     print("-------------------------------------------------------------------------------------------------")
     print(" ")
     print("1) Install")
@@ -821,71 +822,74 @@ def AnonGT():
     elif option == "2":
         clear_screen()
         os.system("sudo python3 AnonGT.py")
-        choice = input("Select Option: ")
-        if option == "start":
-            os.system("sudo python3 AnonGT.py start")
-            AnonGT()
-        if option == "start+":
-            os.system("sudo python3 AnonGT.py start+")
-            AnonGT()
-        if option == "stop":
-            os.system("sudo python3 AnonGT.py stop")
-            AnonGT()
-        if option == "status":
-            os.system("sudo python3 AnonGT.py status")
-            AnonGT()
-        if option == "myip":
-            os.system("sudo python3 AnonGT.py myip")
-            time.sleep(5)
-            AnonGT()
-        if option == "chngid":
-            os.system("sudo python3 AnonGT.py chngid")
-            AnonGT()
-        if option == "autochng":
-            os.system("sudo python3 AnonGT.py autochng")
-            AnonGT()
-        if option == "antimitm":
-            os.system("sudo python3 AnonGT.py antimitm")
-            AnonGT()
-        if option == "chngmac":
-            os.system("sudo python3 AnonGT.py chngmac")
-            AnonGT()
-        if option == "rvmac":
-            os.system("sudo python3 AnonGT.py rvmac")
-            AnonGT()
-        if option == "oniongen":
-            os.system("sudo python3 AnonGT.py oniongen")
-            AnonGT()
-        if option == "checko":
-            os.system("sudo python3 AnonGT.py checko")
-            AnonGT()
-        if option == "share":
-            os.system("sudo python3 AnonGT.py share")
-            AnonGT()
-        if option == "receive":
-            os.system("sudo python3 AnonGT.py receive")
-            AnonGT()
-        if option == "chat":
-            os.system("sudo python3 AnonGT.py chat")
-            AnonGT()
-        if option == "website":
-            os.system("sudo python3 AnonGT.py website")
-            AnonGT()
-        if option == "wipe":
-            os.system("sudo python3 AnonGT.py wipe")
-            AnonGT()
-        if option == "fix":
-            os.system("sudo python3 AnonGT.py fix")
-            AnonGT()
-        if option == "checku":
-            os.system("sudo python3 AnonGT.py checku")
-            AnonGT()
-        if option == "about":
-            os.system("sudo python3 AnonGT.py about")
-            AnonGT()
-        if option == "start":
-            os.system("sudo python3 AnonGT.py start")
-            AnonGT()
+        choice = input("Enter Your Choice: ")
+        subprocess.os("sudo" , "python3"  , "Anongt.py" , choice )
+        AnonGT()
+ #       choice = input("Select Option: ")
+ #       if option == "start":
+ #           os.system("sudo python3 AnonGT.py start")
+ #           AnonGT()
+ #       if option == "start+":
+ #           os.system("sudo python3 AnonGT.py start+")
+ #           AnonGT()
+ #       if option == "stop":
+ #           os.system("sudo python3 AnonGT.py stop")
+ #           AnonGT()
+ #       if option == "status":
+ #           os.system("sudo python3 AnonGT.py status")
+ #           AnonGT()
+ #       if option == "myip":
+ #           os.system("sudo python3 AnonGT.py myip")
+ #           time.sleep(5)
+ #           AnonGT()
+ #       if option == "chngid":
+ #           os.system("sudo python3 AnonGT.py chngid")
+ #           AnonGT()
+ #       if option == "autochng":
+ #           os.system("sudo python3 AnonGT.py autochng")
+ #           AnonGT()
+ #       if option == "antimitm":
+ #           os.system("sudo python3 AnonGT.py antimitm")
+ #           AnonGT()
+ #       if option == "chngmac":
+ #           os.system("sudo python3 AnonGT.py chngmac")
+ #           AnonGT()
+ #       if option == "rvmac":
+ #           os.system("sudo python3 AnonGT.py rvmac")
+ #           AnonGT()
+ #       if option == "oniongen":
+ #           os.system("sudo python3 AnonGT.py oniongen")
+ #           AnonGT()
+ #       if option == "checko":
+ #           os.system("sudo python3 AnonGT.py checko")
+ #           AnonGT()
+ #       if option == "share":
+ #           os.system("sudo python3 AnonGT.py share")
+ #           AnonGT()
+ #       if option == "receive":
+ #           os.system("sudo python3 AnonGT.py receive")
+ #           AnonGT()
+ #       if option == "chat":
+ #           os.system("sudo python3 AnonGT.py chat")
+ #           AnonGT()
+ #       if option == "website":
+ #           os.system("sudo python3 AnonGT.py website")
+ #           AnonGT()
+ #       if option == "wipe":
+ #           os.system("sudo python3 AnonGT.py wipe")
+ #           AnonGT()
+ #       if option == "fix":
+ #           os.system("sudo python3 AnonGT.py fix")
+ #           AnonGT()
+ #       if option == "checku":
+ #           os.system("sudo python3 AnonGT.py checku")
+ #           AnonGT()
+ #       if option == "about":
+ #           os.system("sudo python3 AnonGT.py about")
+ #           AnonGT()
+ #       if option == "start":
+ #           os.system("sudo python3 AnonGT.py start")
+ #           AnonGT()
 
     elif option == "BACK":
         clear_screen()
@@ -1099,6 +1103,7 @@ def Blackbird():
 def Photon():
 
     change()
+
     print(colored('This is a work in progress' , 'red'))
     print("Photon is a data crawler that can look for mutliple different types of information.")
     print("----------------------------------------------------------------------------------------------")
@@ -1120,7 +1125,10 @@ def Photon():
     elif option == "2":
         clear_screen()
         os.chdir("Photon")
-        subprocess.run("")
+        os.system("python3 photon.py")
+        run_method = input("Enter Type of Run: ")
+        url = input("Enter URL: ")
+        subprocess.run("python3" , "photon.py" , run_method , url)
 
     elif option == "BACK":
         clear_screen()
@@ -1160,7 +1168,7 @@ def OSINT_Tools():
         clear_screen()
         Photon()
     
-    elif option == "Back":
+    elif option == "BACK":
         clear_screen()
         Monitoring_and_Recon()
 
@@ -1947,6 +1955,51 @@ def Villain():
         clear_screen()
         cracking_and_breaking() 
 
+########-------------------------------------------PhoneSploit Pro--------------------------------------------------#####
+def PhoneSploit_Pro():
+
+    change()
+
+    print(r'''
+          PhoeSPloit Pro is a program with 45 options of phone sploits through IP address.
+          These inlcude everything from turning the device off, to audio recordings through the phone.
+          Can be used to 
+          ''')
+    print("------------------------------------------------------------------------------------------------")
+    print(" ")
+    print("1) Install")
+    print("2) Run")
+
+    foot()
+
+    option = input("< ")
+
+    if option == "1":
+        clear_screen()
+        os.system("git clone https://github.com/AzeemIdrisi/PhoneSploit-Pro.git")
+        os.chdir("PhoneSploit-Pro/")
+        os.system("pip install -r requirements.txt")
+        PhoneSploit_Pro()
+
+    elif option =="2":
+        clear_screen()
+        os.chdir("PhoneSploit-Pro/")
+        os.system("python3 phonesploitpro.py")
+
+    elif option == "BACK":
+        clear_screen()
+        cracking_and_breaking()
+
+    elif option == "MAIN":
+        clear_screen()
+        main_menu()
+
+    else:
+        print("\033[91m Do not stray from the path, try again\033[0m")
+        time.sleep(1)
+        clear_screen()
+        PhoneSploit_Pro     
+
 
 ##### -------------------------------------------Cracking and Breaking ---------------------------------------------#####
 def cracking_and_breaking():
@@ -1960,6 +2013,7 @@ def cracking_and_breaking():
     print("4) Rubber Ducky Script Builder")
     print("5) AutoXploit")
     print("6) Villain")
+    print("7) PhoneSploit Pro")
 
     foot()
 
@@ -1988,6 +2042,10 @@ def cracking_and_breaking():
     elif option == "6":
         clear_screen()
         Villain()
+
+    elif option == "7":
+        clear_screen()
+        PhoneSploit_Pro()
 
     elif option == "BACK":
         clear_screen()
@@ -2321,11 +2379,14 @@ def directories():
 
 def Websites_Dark():
 
+    print("This page is still under construction!")
+    print(" ")
     print("These are websites on the Tor network that")
 
-    print("1) Fuck Facebook --- 4wbwa6vcpvcr3vvf4qkhppgy56urmjcj2vagu2iqgp3z656xcmfdbiqd.onion")
 
     foot()
+
+    option = input("< ")
 
     if option == "BACK":
         clear_screen()
