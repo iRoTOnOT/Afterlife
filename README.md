@@ -97,3 +97,6 @@ https://github.com/AnonCatalyst/DepthSearch.git
 
 -----------  Deep - created by Dongle
 https://github.com/Thr0wAway-n0w/Deep.git
+
+-----------  PhoneSploit Pro by AzeemIdrisi
+https://github.com/AzeemIdrisi/PhoneSploit-Pro
