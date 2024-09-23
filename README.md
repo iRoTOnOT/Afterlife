@@ -42,6 +42,7 @@ This program is still being written so please be patient.
                        - Ducky Script Builder
                   * AutoXploit
                   * Villain
+                  * PhoneSploit Pro
 
                      
 ### 3. Purgatory - Resources of reading material and sites to assist with research and exploration
