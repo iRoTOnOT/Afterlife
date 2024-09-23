@@ -1,4 +1,4 @@
-### This program is for educational purposes only. Use in a responsible discretion.
+### This directory is for educational purposes only. Use in a responsible discretion and obey all laws and regulations that you reside in. Do not use any of the programs against anything you do no personally own.
 
 ### This code is stil being written and is in the primary stages of development
 
